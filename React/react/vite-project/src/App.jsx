@@ -76,6 +76,14 @@ import DynamicFormpage from './pages_09-07-2026/Taskpages_24-07-2026/Dynamic_for
 import API_integrationpage from './pages_09-07-2026/Taskpages_24-07-2026/Api_integrationspages/API_integrationpage';
 import Apicallspages from './pages_09-07-2026/Taskpages_24-07-2026/Api_integrationspages/Apicallspages';
 import Employeespages from './pages_09-07-2026/Taskpages_24-07-2026/Employeespages';
+import Apimethodspage from './pages_09-07-2026/API&memopage/API/Apimethodspage';
+import Handlingpage from './pages_09-07-2026/API&memopage/API/Handlingpage';
+import Useeffect_pages from './pages_09-07-2026/API&memopage/API/Useeffect_pages';
+import Reusablepages from './pages_09-07-2026/API&memopage/API/Reusablepages';
+import Compare from './pages_09-07-2026/API&memopage/Memo()/Compare';
+import Reusable_componentspage from './pages_09-07-2026/API&memopage/Reusable_componentspage';
+import ChildMemopage from './pages_09-07-2026/API&memopage/ChildMemopage';
+import Miniassignmentpage from './pages_09-07-2026/API&memopage/Miniassignmentpage';
 // import Providerpage from './pages_09-07-2026/Redux15-07-2026/Providerpage';
 
 
@@ -159,6 +167,14 @@ function App() {
     <Route path='/higher' element={<HocPages/>}/>
     <Route path='/calls' element={<Apicallspages/>}/>
     <Route path='/EMP2' element={<Employeespages/>}/>
+    <Route path='/Apimethods' element={<Apimethodspage/>}/>
+    <Route path='/handle' element={<Handlingpage/>}/>
+    <Route path='/useeffectapi' element={<Useeffect_pages/>}/>
+    <Route path='/reusableapi' element={<Reusablepages/>}/>
+    <Route path='/memo' element={<Compare/>}/>
+    <Route path='/rcomponent' element={<Reusable_componentspage/>}/>
+    <Route path='/ChildMemo' element={<ChildMemopage/>}/>
+    <Route path='/assignments' element={<Miniassignmentpage/>}/>
   </Routes>
   </BrowserRouter>
   )
