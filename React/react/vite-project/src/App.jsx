@@ -84,6 +84,12 @@ import Compare from './pages_09-07-2026/API&memopage/Memo()/Compare';
 import Reusable_componentspage from './pages_09-07-2026/API&memopage/Reusable_componentspage';
 import ChildMemopage from './pages_09-07-2026/API&memopage/ChildMemopage';
 import Miniassignmentpage from './pages_09-07-2026/API&memopage/Miniassignmentpage';
+import Fragmentspages from './pages_09-07-2026/Task_28-07-2026/Fragments/Fragmentspages';
+import Lodingpagess from './pages_09-07-2026/Task_28-07-2026/HOCpages/Lodingpagess';
+import Loginpages from './pages_09-07-2026/Task_28-07-2026/HOCpages/Loginpages';
+import Counterspage from './pages_09-07-2026/Task_28-07-2026/hooks/Counterspage';
+import CoustomHookPage from './pages_09-07-2026/Task_28-07-2026/Customhookpage/CoustomHookPage';
+import Minipractice from './pages_09-07-2026/Task_28-07-2026/Minipractice';
 // import Providerpage from './pages_09-07-2026/Redux15-07-2026/Providerpage';
 
 
@@ -175,6 +181,12 @@ function App() {
     <Route path='/rcomponent' element={<Reusable_componentspage/>}/>
     <Route path='/ChildMemo' element={<ChildMemopage/>}/>
     <Route path='/assignments' element={<Miniassignmentpage/>}/>
+    <Route path='/fragments' element={<Fragmentspages/>}/>
+    <Route path='/hocloding' element={<Lodingpagess/>}/>
+    <Route path='/logi' element={<Loginpages/>}/>
+    <Route path='/hookcounter' element={<Counterspage/>}/>
+    <Route path='/coustomhook' element={<CoustomHookPage/>}/>
+    <Route path='/minipractice' element={<Minipractice/>}/>
   </Routes>
   </BrowserRouter>
   )
