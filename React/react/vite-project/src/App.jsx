@@ -90,6 +90,13 @@ import Loginpages from './pages_09-07-2026/Task_28-07-2026/HOCpages/Loginpages';
 import Counterspage from './pages_09-07-2026/Task_28-07-2026/hooks/Counterspage';
 import CoustomHookPage from './pages_09-07-2026/Task_28-07-2026/Customhookpage/CoustomHookPage';
 import Minipractice from './pages_09-07-2026/Task_28-07-2026/Minipractice';
+import Counterspagess from './pages_09-07-2026/TaskPage_29-07-2026/PureComponents/Counterspagess';
+import Employee from './pages_09-07-2026/TaskPage_29-07-2026/React.memopage/Employee';
+import Comparepage from './pages_09-07-2026/TaskPage_29-07-2026/React.memopage/Comparepage';
+import Usememo from './pages_09-07-2026/TaskPage_29-07-2026/Usememo';
+import Usecallbackpage from './pages_09-07-2026/TaskPage_29-07-2026/Usecallbackpage';
+import Employeeusecallbackpages from './pages_09-07-2026/TaskPage_29-07-2026/Employeeusecallbackpages';
+import Minipracticepages from './pages_09-07-2026/TaskPage_29-07-2026/Minipracticepages';
 // import Providerpage from './pages_09-07-2026/Redux15-07-2026/Providerpage';
 
 
@@ -187,6 +194,13 @@ function App() {
     <Route path='/hookcounter' element={<Counterspage/>}/>
     <Route path='/coustomhook' element={<CoustomHookPage/>}/>
     <Route path='/minipractice' element={<Minipractice/>}/>
+    <Route path='/Counters' element={<Counterspagess/>}/>
+    <Route path='/emplist' element={<Employee/>}/>
+    <Route path='/cmemo' element={<Comparepage/>}/>
+    <Route path='/usememo' element={<Usememo/>}/>
+    <Route path='/usecallback' element={<Usecallbackpage/>}/>
+    <Route path='/empusecallback' element={<Employeeusecallbackpages/>}/>
+    <Route path='/miniprac' element={<Minipracticepages/>}/>
   </Routes>
   </BrowserRouter>
   )
