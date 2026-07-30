@@ -97,6 +97,14 @@ import Usememo from './pages_09-07-2026/TaskPage_29-07-2026/Usememo';
 import Usecallbackpage from './pages_09-07-2026/TaskPage_29-07-2026/Usecallbackpage';
 import Employeeusecallbackpages from './pages_09-07-2026/TaskPage_29-07-2026/Employeeusecallbackpages';
 import Minipracticepages from './pages_09-07-2026/TaskPage_29-07-2026/Minipracticepages';
+import Portalpage from './pages_09-07-2026/Task_30-07-2026/Portalpage';
+import FunctionalEBpage from './pages_09-07-2026/Task_30-07-2026/FunctionalEBpage';
+import Parameterspage from './pages_09-07-2026/Task_30-07-2026/parameterspage';
+import Comparepages from './pages_09-07-2026/Task_30-07-2026/Comparepages';
+import AllEventpage from './pages_09-07-2026/Task_30-07-2026/AllEventpage';
+import Combinepage from './pages_09-07-2026/Task_30-07-2026/Combinepage';
+import Miniprojectpages from './pages_09-07-2026/Practice_16-07-2026/Mini-projext/Miniprojectpages';
+import Minipracticepagesportals from './pages_09-07-2026/Task_30-07-2026/Minipracticepagesportals';
 // import Providerpage from './pages_09-07-2026/Redux15-07-2026/Providerpage';
 
 
@@ -201,6 +209,13 @@ function App() {
     <Route path='/usecallback' element={<Usecallbackpage/>}/>
     <Route path='/empusecallback' element={<Employeeusecallbackpages/>}/>
     <Route path='/miniprac' element={<Minipracticepages/>}/>
+    <Route path='/portal' element={<Portalpage/>}/>
+    <Route path='/functional' element={<FunctionalEBpage/>}/>
+    <Route path='/parameters' element={<Parameterspage/>}/>
+    <Route path='/compare' element={<Comparepages/>}/>
+    <Route path='/allevents' element={<AllEventpage/>}/>
+    <Route path='/combine' element={<Combinepage/>}/>
+    <Route path='/minipracticeportals' element={<Minipracticepagesportals/>}/>
   </Routes>
   </BrowserRouter>
   )
