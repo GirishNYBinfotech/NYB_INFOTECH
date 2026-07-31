@@ -105,6 +105,18 @@ import AllEventpage from './pages_09-07-2026/Task_30-07-2026/AllEventpage';
 import Combinepage from './pages_09-07-2026/Task_30-07-2026/Combinepage';
 import Miniprojectpages from './pages_09-07-2026/Practice_16-07-2026/Mini-projext/Miniprojectpages';
 import Minipracticepagesportals from './pages_09-07-2026/Task_30-07-2026/Minipracticepagesportals';
+import Mappages from './pages_09-07-2026/Task_31-07-2026/Mappages';
+import Nestedlistpage from './pages_09-07-2026/Task_31-07-2026/Nestedlistpage';
+import Productspage from './pages_09-07-2026/Task_31-07-2026/Productspage';
+import Objectdstructuringpage from './pages_09-07-2026/Task_31-07-2026/objectdstructuringpage';
+import Nestedobjectpage from './pages_09-07-2026/Task_31-07-2026/Nestedobjectpage';
+import ArrayDestructuringpage from './pages_09-07-2026/Task_31-07-2026/ArrayDestructuringpage';
+import Teacherpage from './pages_09-07-2026/Task_31-07-2026/Teacherpage';
+import Statepages from './pages_09-07-2026/Task_31-07-2026/Statepages';
+import Lazylodingpages from './pages_09-07-2026/Task_31-07-2026/Lazylodingpages';
+import Homepages from './pages_09-07-2026/Task_31-07-2026/Homepages';
+import Miniprojectpagessall from './pages_09-07-2026/Task_31-07-2026/Miniprojectpagessall';
+import Condition_listpage from './pages_09-07-2026/Task_31-07-2026/condition_listpage';
 // import Providerpage from './pages_09-07-2026/Redux15-07-2026/Providerpage';
 
 
@@ -216,6 +228,18 @@ function App() {
     <Route path='/allevents' element={<AllEventpage/>}/>
     <Route path='/combine' element={<Combinepage/>}/>
     <Route path='/minipracticeportals' element={<Minipracticepagesportals/>}/>
+    <Route path='/maplist' element={<Mappages/>}/>
+    <Route path='/nestedlist' element={<Nestedlistpage/>}/>
+    <Route path='/product' element={<Productspage/>}/>
+    <Route path='/objectdestructuring' element={<Objectdstructuringpage/>}/>
+    <Route path='/nestedobject' element={<Nestedobjectpage/>}/>
+    <Route path='/Arraydestructuring' element={<ArrayDestructuringpage/>}/>
+    <Route path='/Teacher' element={<Teacherpage/>}/>
+    <Route path='/state' element={<Statepages/>}/>
+    <Route path='/conditionallist' element={<Condition_listpage/>}/>
+    <Route path='/lazyloding' element={<Lazylodingpages/>}/>
+    <Route path='/homepage' element={<Homepages/>}/>
+    <Route path='/miniprojectall' element={<Miniprojectpagessall/>}/>
   </Routes>
   </BrowserRouter>
   )
