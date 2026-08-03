@@ -117,6 +117,28 @@ import Lazylodingpages from './pages_09-07-2026/Task_31-07-2026/Lazylodingpages'
 import Homepages from './pages_09-07-2026/Task_31-07-2026/Homepages';
 import Miniprojectpagessall from './pages_09-07-2026/Task_31-07-2026/Miniprojectpagessall';
 import Condition_listpage from './pages_09-07-2026/Task_31-07-2026/condition_listpage';
+import Aplictionpage from './pages_09-07-2026/Taskpage_03-08-2026/Aplictionpage';
+import Home from './components_09-07-2026/Task_03-08-2026/Appliction/Home';
+import About from './components_09-07-2026/Task_03-08-2026/Appliction/About';
+// import Contact from './components_09-07-2026/Task_03-08-2026/Appliction/Contact';
+import Studentpages from './pages_09-07-2026/Taskpage_03-08-2026/Studentpages';
+import Dashboard from './components_09-07-2026/Task_03-08-2026/Student/Dashboard';
+import Students from './components_09-07-2026/Task_03-08-2026/Student/Students';
+import Courses from './components_09-07-2026/Task_03-08-2026/Student/Courses';
+import NotFound from './components_09-07-2026/Task_03-08-2026/Student/NotFound';
+import Studentspages from './pages_09-07-2026/Taskpage_03-08-2026/Studentspages';
+import Homes from './components_09-07-2026/Task_03-08-2026/Comparing/Clientside_routing/Homes';
+import Studentss from './components_09-07-2026/Task_03-08-2026/Comparing/Clientside_routing/Studentss';
+import Abouts from './components_09-07-2026/Task_03-08-2026/Comparing/Clientside_routing/Abouts';
+import Mainpage from './components_09-07-2026/Task_03-08-2026/Appliction/mainpage';
+import Student from './components_09-07-2026/Task_03-08-2026/Student/Student';
+import Shopping from './components_09-07-2026/Task_03-08-2026/practice1/Shopping';
+import Contact from './components_09-07-2026/Task_03-08-2026/Appliction/Contact';
+import Navbarpage from './pages_09-07-2026/Taskpage_03-08-2026/Navbarpage';
+import Home1 from './components_09-07-2026/Task_03-08-2026/Minipractice/Home1';
+import Services1 from './components_09-07-2026/Task_03-08-2026/Minipractice/Services1';
+import Contact1 from './components_09-07-2026/Task_03-08-2026/Minipractice/Contact1';
+import About1 from './components_09-07-2026/Task_03-08-2026/Minipractice/About1';
 // import Providerpage from './pages_09-07-2026/Redux15-07-2026/Providerpage';
 
 
@@ -124,6 +146,7 @@ import Condition_listpage from './pages_09-07-2026/Task_31-07-2026/condition_lis
 function App() {
   return (
     <BrowserRouter>
+    {/* <Shopping/> */}
   <Routes>
     <Route path='/props' element={<PropsPage/>}/>
     <Route path='/localstate' element={<LocalstatePage/>}/>
@@ -240,6 +263,28 @@ function App() {
     <Route path='/lazyloding' element={<Lazylodingpages/>}/>
     <Route path='/homepage' element={<Homepages/>}/>
     <Route path='/miniprojectall' element={<Miniprojectpagessall/>}/>
+    {/* application */}
+    <Route path='/appliction' element={<Aplictionpage/>}/>
+    <Route path='/' element={<Home/>} />
+    <Route path="/about" element={<About/>} />
+    <Route path="/contact" element={<Contact/>} />
+    {/* Student */}
+    <Route path="/stud" element={<Studentpages/>} />
+    <Route path="/" element={<Dashboard />} />
+    <Route path="/students" element={<Students />} />
+    <Route path="/courses" element={<Courses/>} />
+    <Route path="*" element={<NotFound/>} />
+    {/* Student compare */}
+    <Route path="/Studen" element={<Studentspages/>} />
+    <Route path="/homes" element={<Homes/>} />
+    <Route path="/students" element={<Studentss />} />
+    <Route path="/about" element={<Abouts/>} />
+    {/* minipractice */}
+    <Route path="/navbar" element={<Navbarpage />} />
+    <Route path="/home1" element={<Home1/>} />
+    <Route path="/about1" element={<About1/>} />
+    <Route path="/services1" element={<Services1/>} />
+    <Route path="/contact1" element={<Contact1/>} />
   </Routes>
   </BrowserRouter>
   )
