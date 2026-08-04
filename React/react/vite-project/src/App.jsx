@@ -132,21 +132,39 @@ import Studentss from './components_09-07-2026/Task_03-08-2026/Comparing/Clients
 import Abouts from './components_09-07-2026/Task_03-08-2026/Comparing/Clientside_routing/Abouts';
 import Mainpage from './components_09-07-2026/Task_03-08-2026/Appliction/mainpage';
 import Student from './components_09-07-2026/Task_03-08-2026/Student/Student';
-import Shopping from './components_09-07-2026/Task_03-08-2026/practice1/Shopping';
+// import Shopping from './components_09-07-2026/Task_03-08-2026/practice1/Shopping';
 import Contact from './components_09-07-2026/Task_03-08-2026/Appliction/Contact';
 import Navbarpage from './pages_09-07-2026/Taskpage_03-08-2026/Navbarpage';
 import Home1 from './components_09-07-2026/Task_03-08-2026/Minipractice/Home1';
 import Services1 from './components_09-07-2026/Task_03-08-2026/Minipractice/Services1';
 import Contact1 from './components_09-07-2026/Task_03-08-2026/Minipractice/Contact1';
 import About1 from './components_09-07-2026/Task_03-08-2026/Minipractice/About1';
-// import Providerpage from './pages_09-07-2026/Redux15-07-2026/Providerpage';
-
+import Dashboardpage from './pages_09-07-2026/Task_04-08-2026/Dashboardpage';
+import DashBoard from './components_09-07-2026/Task_04-08-2026/Nested_Routing/DashBoard';
+import Profile from './components_09-07-2026/Task_04-08-2026/Nested_Routing/Profile';
+import Settings from './components_09-07-2026/Task_04-08-2026/Nested_Routing/Settings';
+import NewDashboard from './components_09-07-2026/Task_04-08-2026/Nested_Routing/NewDashboard';
+import User from './components_09-07-2026/Task_04-08-2026/Users/User';
+import New from './components_09-07-2026/Task_04-08-2026/UseNavigate/New';
+import Homepage from './components_09-07-2026/Task_04-08-2026/Protected_Routes/Homepage';
+import RouteConfigure from './components_09-07-2026/Task_04-08-2026/PassingData/RouteConfigure';
+import MainApp from './components_09-07-2026/Task_04-08-2026/RoutingConfiguration.jsx/MainApp';
+import Useparam from './components_09-07-2026/Task_04-08-2026/Useparams/UseParam';
+import MainApps from './components_09-07-2026/Task_04-08-2026/Minipractice/MainApps';
 
 
 function App() {
   return (
     <BrowserRouter>
     {/* <Shopping/> */}
+    {/* <DashBoard/> */}
+    {/* <User/> */}
+    {/* <Useparam/> */}
+    {/* <New/> */}
+    {/* <Homepage/> */}
+    {/* <RouteConfigure/> */}
+    {/* <MainApp/> */}
+    <MainApps/>
   <Routes>
     <Route path='/props' element={<PropsPage/>}/>
     <Route path='/localstate' element={<LocalstatePage/>}/>
@@ -265,26 +283,36 @@ function App() {
     <Route path='/miniprojectall' element={<Miniprojectpagessall/>}/>
     {/* application */}
     <Route path='/appliction' element={<Aplictionpage/>}/>
-    <Route path='/' element={<Home/>} />
+    {/* <Route path='/Home' element={<Home/>} />
     <Route path="/about" element={<About/>} />
-    <Route path="/contact" element={<Contact/>} />
+    <Route path="/contact" element={<Contact/>} /> */}
     {/* Student */}
     <Route path="/stud" element={<Studentpages/>} />
-    <Route path="/" element={<Dashboard />} />
+    {/* <Route path="/Dashboard" element={<Dashboard />} /> */}
     <Route path="/students" element={<Students />} />
     <Route path="/courses" element={<Courses/>} />
-    <Route path="*" element={<NotFound/>} />
+    {/* <Route path="*" element={<NotFound/>} /> */}
     {/* Student compare */}
     <Route path="/Studen" element={<Studentspages/>} />
     <Route path="/homes" element={<Homes/>} />
     <Route path="/students" element={<Studentss />} />
-    <Route path="/about" element={<Abouts/>} />
+    {/* <Route path="/about" element={<Abouts/>} /> */}
     {/* minipractice */}
     <Route path="/navbar" element={<Navbarpage />} />
     <Route path="/home1" element={<Home1/>} />
     <Route path="/about1" element={<About1/>} />
     <Route path="/services1" element={<Services1/>} />
     <Route path="/contact1" element={<Contact1/>} />
+    {/* nested routing */}
+    {/* <Route path="/board1" element={<Dashboardpage/>} />
+    <Route path="/profile" element={<Profile />} />
+  <Route path="/settings" element={<Settings />} /> */}
+ {/* if its in nested loop then opening and closing tags betweeen we need to call the child components like below we are calling profile and settings, with self closing tags it doesnt route the path */ }
+ <Route path="/board" element={<DashBoard />}>
+ <Route index element={<h2>NewDashboard</h2>}/>
+  <Route path="profile" element={<Profile />} />
+  <Route path="settings" element={<Settings />} />
+  </Route>
   </Routes>
   </BrowserRouter>
   )
