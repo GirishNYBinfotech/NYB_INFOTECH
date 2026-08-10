@@ -151,6 +151,24 @@ import RouteConfigure from './components_09-07-2026/Task_04-08-2026/PassingData/
 import MainApp from './components_09-07-2026/Task_04-08-2026/RoutingConfiguration.jsx/MainApp';
 import Useparam from './components_09-07-2026/Task_04-08-2026/Useparams/UseParam';
 import MainApps from './components_09-07-2026/Task_04-08-2026/Minipractice/MainApps';
+import Propspages from './pages_09-07-2026/Taskpage_10-08-2026/Propspages';
+import Propsiteampage from './pages_09-07-2026/Taskpage_10-08-2026/Propsiteampage';
+import StateCountersPage from './pages_09-07-2026/Taskpage_10-08-2026/StateCountersPage';
+import Statespages from './pages_09-07-2026/Taskpage_10-08-2026/Statespages';
+import Communicationpage from './pages_09-07-2026/Taskpage_10-08-2026/Communicationpage';
+import ConditionalRenderingpage from './pages_09-07-2026/Taskpage_10-08-2026/ConditionalRenderingpage';
+import Listrendering from './components_09-07-2026/Task_10-08-2026/Listrendering/Fruits';
+import Listrenderingpage from './pages_09-07-2026/Taskpage_10-08-2026/Listrenderingpage';
+import Taskpage from './pages_09-07-2026/Taskpage_10-08-2026/Taskpage';
+import Navbar from './Component/Navbar';
+import Home4 from './pages/Home4';
+import About4 from './pages/About4';
+import Login4 from './pages/Login4';
+import Dashboard4 from './pages/Dashboard4';
+import Profile4 from './pages/Profile4';
+import Users from './pages/Users';
+import UserDetails4 from './pages/UserDetails4';
+import ProtectedRoute from './Component/ProtectedRoute';
 
 
 function App() {
@@ -164,7 +182,26 @@ function App() {
     {/* <Homepage/> */}
     {/* <RouteConfigure/> */}
     {/* <MainApp/> */}
-    <MainApps/>
+    {/* <MainApps/> */}
+    <Navbar/>
+  <Routes>
+  {/* Browser Routing */}
+  <Route path="/" element={<Home4/>}/>
+  <Route path="/about" element={<About4/>}/>
+ {/* Login */}
+<Route path="/login" element={<Login4/>} />
+ {/* Protected Route */}
+ <Route element={<ProtectedRoute/>}>
+  <Route path="/dashboard" element={<Dashboard4/>}/>
+  {/* Nested Routing */}
+  <Route path="/dashboard/profile" element={<Profile4/>}/>
+  </Route>
+  {/* Dynamic Routing */}
+  <Route path="/users" element={<Users/>}/>
+  <Route path="/users/:id" element={<UserDetails4/>}/>
+  {/* Custom 404 */}
+  <Route path="*" element={<NotFound/>}/>
+  </Routes>
   <Routes>
     <Route path='/props' element={<PropsPage/>}/>
     <Route path='/localstate' element={<LocalstatePage/>}/>
@@ -308,11 +345,22 @@ function App() {
     <Route path="/profile" element={<Profile />} />
   <Route path="/settings" element={<Settings />} /> */}
  {/* if its in nested loop then opening and closing tags betweeen we need to call the child components like below we are calling profile and settings, with self closing tags it doesnt route the path */ }
- <Route path="/board" element={<DashBoard />}>
+ {/* <Route path="/board" element={<DashBoard />}>
  <Route index element={<h2>NewDashboard</h2>}/>
   <Route path="profile" element={<Profile />} />
-  <Route path="settings" element={<Settings />} />
-  </Route>
+  <Route path="settings" element={<Settings />} /> */}
+
+  {/* props */}
+  <Route path='/proppage' element={<Propspages/>}/>
+  <Route path='/Iteampage' element={<Propsiteampage/>}/>
+  <Route path='/statecount' element={<StateCountersPage/>}/>
+  <Route path='/statepage' element={<Statespages/>}/>
+  <Route path='/communication' element={<Communicationpage/>}/>
+  <Route path='/conditionalrender' element={<ConditionalRenderingpage/>}/>
+  <Route path='/listrender' element={<Listrenderingpage/>}/>
+  <Route path='/task' element={<Taskpage/>}/>
+  
+  {/* </Route> */}
   </Routes>
   </BrowserRouter>
   )
