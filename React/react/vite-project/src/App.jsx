@@ -169,6 +169,14 @@ import Profile4 from './pages/Profile4';
 import Users from './pages/Users';
 import UserDetails4 from './pages/UserDetails4';
 import ProtectedRoute from './Component/ProtectedRoute';
+// import Reactrouter from './pages_09-07-2026/Reactrouterpage/Reactrouter';
+import InputUsestatepage from './pages_09-07-2026/Practice_11-08-2026/InputUsestatepage';
+import ApicallsUseeffectpages from './pages_09-07-2026/Practice_11-08-2026/ApicallsUseeffectpages';
+import AxiosApicallspages from './pages_09-07-2026/Practice_11-08-2026/AxiosApicallspages';
+import UseRefpage from './pages_09-07-2026/Practice_11-08-2026/UseRefpage';
+import SearchBoxpage from './pages_09-07-2026/Practice_11-08-2026/SearchBoxpage';
+import Useeffectpagesp from './pages_09-07-2026/Practice_11-08-2026/Useeffectpagesp';
+import Taskpages from './pages_09-07-2026/Practice_11-08-2026/Taskpages';
 
 
 function App() {
@@ -183,25 +191,20 @@ function App() {
     {/* <RouteConfigure/> */}
     {/* <MainApp/> */}
     {/* <MainApps/> */}
-    <Navbar/>
+    {/* <Navbar/>
   <Routes>
-  {/* Browser Routing */}
   <Route path="/" element={<Home4/>}/>
   <Route path="/about" element={<About4/>}/>
- {/* Login */}
 <Route path="/login" element={<Login4/>} />
- {/* Protected Route */}
  <Route element={<ProtectedRoute/>}>
   <Route path="/dashboard" element={<Dashboard4/>}/>
-  {/* Nested Routing */}
   <Route path="/dashboard/profile" element={<Profile4/>}/>
   </Route>
-  {/* Dynamic Routing */}
   <Route path="/users" element={<Users/>}/>
   <Route path="/users/:id" element={<UserDetails4/>}/>
-  {/* Custom 404 */}
   <Route path="*" element={<NotFound/>}/>
-  </Routes>
+  </Routes> */}
+  {/* <Reactrouter/> */}
   <Routes>
     <Route path='/props' element={<PropsPage/>}/>
     <Route path='/localstate' element={<LocalstatePage/>}/>
@@ -359,7 +362,13 @@ function App() {
   <Route path='/conditionalrender' element={<ConditionalRenderingpage/>}/>
   <Route path='/listrender' element={<Listrenderingpage/>}/>
   <Route path='/task' element={<Taskpage/>}/>
-  
+  <Route path='/inputusestate' element={<InputUsestatepage/>}/>
+  <Route path='/apiuseeffects' element={<ApicallsUseeffectpages/>}/>
+  <Route path='/axiosapicalls' element={<AxiosApicallspages/>}/>
+  <Route path='/useref' element={<UseRefpage/>}/>
+  <Route path='/Searchbox' element={<SearchBoxpage/>}/>
+  <Route path='/useeffectp' element={<Useeffectpagesp/>}/>
+  <Route path='/Tasks' element={<Taskpages/>}/>
   {/* </Route> */}
   </Routes>
   </BrowserRouter>
