@@ -177,6 +177,14 @@ import UseRefpage from './pages_09-07-2026/Practice_11-08-2026/UseRefpage';
 import SearchBoxpage from './pages_09-07-2026/Practice_11-08-2026/SearchBoxpage';
 import Useeffectpagesp from './pages_09-07-2026/Practice_11-08-2026/Useeffectpagesp';
 import Taskpages from './pages_09-07-2026/Practice_11-08-2026/Taskpages';
+import ContextApipage from './pages_09-07-2026/ContextPages/ContextApipage';
+import AuthenticationPagec from './pages_09-07-2026/ContextPages/AuthenticationPagec';
+import Languagecontextpage from './pages_09-07-2026/ContextPages/Languagecontextpage';
+import Usereduserpage from './pages_09-07-2026/ContextPages/Usereduserpage';
+import LoginUsereduser from './pages_09-07-2026/ContextPages/LoginUsereduser';
+import Shoppingpage from './pages_09-07-2026/ContextPages/Shoppingpage';
+import StudentsPageM from './pages_09-07-2026/ContextPages/StudentsPageM';
+import Timerpage from './pages_09-07-2026/ContextPages/Timerpage';
 
 
 function App() {
@@ -369,6 +377,14 @@ function App() {
   <Route path='/Searchbox' element={<SearchBoxpage/>}/>
   <Route path='/useeffectp' element={<Useeffectpagesp/>}/>
   <Route path='/Tasks' element={<Taskpages/>}/>
+  <Route path='/1context' element={<ContextApipage/>}/>
+  <Route path='/2context' element={<AuthenticationPagec/>}/>
+  <Route path='/3context' element={<Languagecontextpage/>}/>
+  <Route path='/1usereduser' element={<Usereduserpage/>}/>
+  <Route path='/2usereduser' element={<LoginUsereduser/>}/>
+  <Route path='/shopping' element={<Shoppingpage/>}/>
+  <Route path='/1reduxtool' element={<StudentsPageM/>}/>
+  <Route path='/timer' element={<Timerpage/>}/>
   {/* </Route> */}
   </Routes>
   </BrowserRouter>
