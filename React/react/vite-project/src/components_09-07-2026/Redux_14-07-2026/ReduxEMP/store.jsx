@@ -10,8 +10,6 @@ const store = configureStore({
 
   }
 
-});
-
-console.log("🏪 Redux Store Created");
+})
 
 export default store;

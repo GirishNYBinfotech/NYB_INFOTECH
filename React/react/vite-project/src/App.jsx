@@ -185,6 +185,15 @@ import LoginUsereduser from './pages_09-07-2026/ContextPages/LoginUsereduser';
 import Shoppingpage from './pages_09-07-2026/ContextPages/Shoppingpage';
 import StudentsPageM from './pages_09-07-2026/ContextPages/StudentsPageM';
 import Timerpage from './pages_09-07-2026/ContextPages/Timerpage';
+import Reactmemopage from './pages_09-07-2026/Practicepage_13-08-2026/Reactmemopage';
+import Themememopage from './pages_09-07-2026/Practicepage_13-08-2026/Themememopage';
+import Squarememo from './pages_09-07-2026/Practicepage_13-08-2026/Squarememopage';
+import Pricecalculatorpage from './pages_09-07-2026/Practicepage_13-08-2026/Pricecalculatorpage';
+import Mainpages from './pages_09-07-2026/Practicepage_13-08-2026/Mainpages';
+import Lazylodingpage from './pages_09-07-2026/Practicepage_13-08-2026/Lazylodingpage';
+import Profileinfopage from './pages_09-07-2026/Practicepage_13-08-2026/Profileinfopage';
+import Searchproductpage from './pages_09-07-2026/Practicepage_13-08-2026/Searchproductpage';
+import TaskpagesL from './pages_09-07-2026/Practicepage_13-08-2026/TaskpagesL';
 
 
 function App() {
@@ -385,6 +394,15 @@ function App() {
   <Route path='/shopping' element={<Shoppingpage/>}/>
   <Route path='/1reduxtool' element={<StudentsPageM/>}/>
   <Route path='/timer' element={<Timerpage/>}/>
+  <Route path='/Reactmemo' element={<Reactmemopage/>}/>
+  <Route path='/themememo' element={<Themememopage/>}/>
+  <Route path='/square' element={<Squarememo/>}/>
+  <Route path='/searchproduct' element={<Searchproductpage/>}/>
+  <Route path='/pricecalculator' element={<Pricecalculatorpage/>}/>
+  <Route path='/lazylodings' element={<Mainpages/>}/>
+  <Route path='/Dashboardpage' element={<Lazylodingpage/>}/>
+  <Route path='/profileinfo' element={<Profileinfopage/>}/>
+  <Route path='/productcart' element={<TaskpagesL/>}/>
   {/* </Route> */}
   </Routes>
   </BrowserRouter>
