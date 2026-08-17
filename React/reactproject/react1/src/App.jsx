@@ -10,6 +10,13 @@ import Product from './Components/Routing/Products/Product';
 import Mainroutes from './Components/Routing/ProtectedRoutes/User/Mainroutes';
 import Shoppingcart from './Components/Routing/ProtectedRoutes/Fooddelivery/Shoppingcart';
 import Hospital from './Components/Routing/Task/Hospita';
+import FormPage from './Pages/PracticePages_17-08-2026/FormPage';
+import Multplepage from './Pages/PracticePages_17-08-2026/Multplepage';
+import Newformpage from './Pages/PracticePages_17-08-2026/Newformpage';
+import Loginformpage from './Pages/PracticePages_17-08-2026/Loginformpage';
+import Skillformpage from './Pages/PracticePages_17-08-2026/Skillformpage';
+import Dynamicformpage from './Pages/PracticePages_17-08-2026/Dynamicformpage';
+import Registrationformpage from './Pages/PracticePages_17-08-2026/Registrationformpage';
 
 
 
@@ -20,13 +27,20 @@ function App() {
     {/* <Employeelink/> */}
     {/* <Product/> */}
     {/* <Mainroutes/> */}
-    <Shoppingcart/>
+    {/* <Shoppingcart/> */}
     {/* <Hospital/> */}
       <Routes>
        {/* <Route path="/" element={<Home />} />
        <Route path="/about" element={<About/>} />
        <Route path="/students" element={<Students/>} />
        <Route path="/students/:id"element={<StudentDetails/>}/> */}
+       <Route path="/Con&unCon" element={<FormPage/>}/>
+       <Route path="/inputs" element={<Multplepage/>}/>
+       <Route path="/formv" element={<Newformpage/>}/>
+       <Route path="/login" element={<Loginformpage/>}/>
+       <Route path="/skillform" element={<Skillformpage/>}/>
+       <Route path="/Dynamicform" element={<Dynamicformpage/>}/>
+       <Route path="/Rform" element={<Registrationformpage/>}/>
       </Routes>
     </BrowserRouter>
   );
