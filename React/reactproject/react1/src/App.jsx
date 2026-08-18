@@ -17,6 +17,12 @@ import Loginformpage from './Pages/PracticePages_17-08-2026/Loginformpage';
 import Skillformpage from './Pages/PracticePages_17-08-2026/Skillformpage';
 import Dynamicformpage from './Pages/PracticePages_17-08-2026/Dynamicformpage';
 import Registrationformpage from './Pages/PracticePages_17-08-2026/Registrationformpage';
+import Apicallspage from './Pages/Practicepage_18-08-2026/Apicallspage';
+import Products from './Components/Practice_18-08-2026/Query parameters/Product';
+import Student from './Components/Practice_18-08-2026/Query parameters/Student';
+import Gettingdatapage from './Pages/Practicepage_18-08-2026/Gettingdatapage';
+import Task from './Components/Practice_18-08-2026/Api/API';
+import APIPage from './Pages/Practicepage_18-08-2026/APIPage';
 
 
 
@@ -41,6 +47,12 @@ function App() {
        <Route path="/skillform" element={<Skillformpage/>}/>
        <Route path="/Dynamicform" element={<Dynamicformpage/>}/>
        <Route path="/Rform" element={<Registrationformpage/>}/>
+       <Route path="/apicalls" element={<Apicallspage/>}/>
+       <Route path="/producturl" element={<Products/>}/>
+       <Route path="/studenturl" element={<Student/>}/>
+       <Route path="/Error" element={<Gettingdatapage/>}/>
+       <Route path="/Apisearch" element={<APIPage/>}/>
+
       </Routes>
     </BrowserRouter>
   );
