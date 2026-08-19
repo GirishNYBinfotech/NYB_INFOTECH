@@ -23,6 +23,11 @@ import Student from './Components/Practice_18-08-2026/Query parameters/Student';
 import Gettingdatapage from './Pages/Practicepage_18-08-2026/Gettingdatapage';
 import Task from './Components/Practice_18-08-2026/Api/API';
 import APIPage from './Pages/Practicepage_18-08-2026/APIPage';
+import Contextpage from './Pages/Practce_19-08-2026/Contextpage';
+import Usereduserpage from './Pages/Practce_19-08-2026/Usereduserpage';
+import Counterpage from './Pages/Practce_19-08-2026/Counterpage';
+import Loginpage from './Pages/Practce_19-08-2026/Loginpage';
+import Usermanagmentpage from './Pages/Practce_19-08-2026/Usermanagmentpage';
 
 
 
@@ -52,7 +57,11 @@ function App() {
        <Route path="/studenturl" element={<Student/>}/>
        <Route path="/Error" element={<Gettingdatapage/>}/>
        <Route path="/Apisearch" element={<APIPage/>}/>
-
+       <Route path="/context" element={<Contextpage/>}/>
+       <Route path="/usereduser" element={<Usereduserpage/>}/>
+       <Route path="/Counter" element={<Counterpage/>}/>
+       <Route path="/loginr" element={<Loginpage/>}/>
+       <Route path="/usermanagment" element={<Usermanagmentpage/>}/>
       </Routes>
     </BrowserRouter>
   );
