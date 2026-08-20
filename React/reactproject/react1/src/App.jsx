@@ -28,6 +28,15 @@ import Usereduserpage from './Pages/Practce_19-08-2026/Usereduserpage';
 import Counterpage from './Pages/Practce_19-08-2026/Counterpage';
 import Loginpage from './Pages/Practce_19-08-2026/Loginpage';
 import Usermanagmentpage from './Pages/Practce_19-08-2026/Usermanagmentpage';
+import Reactmemopage from './Pages/Practicepage_20-08-2026/Reactmemopage';
+import Todopage from './Pages/Practicepage_20-08-2026/Todopage';
+import Expensivepage from './Pages/Practicepage_20-08-2026/Expensivepage';
+import Gradepage from './Pages/Practicepage_20-08-2026/Gradepage';
+import Searchcallpage from './Pages/Practicepage_20-08-2026/Searchcallpage';
+import Greetpage from './Pages/Practicepage_20-08-2026/Greetpage';
+import Userprofilepage from './Pages/Practicepage_20-08-2026/Userprofilepage';
+import Shoppingpage from './Pages/Practicepage_20-08-2026/Shoppingpage';
+import Taskpage from './Pages/Practicepage_20-08-2026/Taskpage';
 
 
 
@@ -62,6 +71,15 @@ function App() {
        <Route path="/Counter" element={<Counterpage/>}/>
        <Route path="/loginr" element={<Loginpage/>}/>
        <Route path="/usermanagment" element={<Usermanagmentpage/>}/>
+       <Route path="/Reactmemo" element={<Reactmemopage/>}/>
+       <Route path="/Todo" element={<Todopage/>}/>
+       <Route path="/Expensive" element={<Expensivepage/>}/>
+       <Route path="/grade" element={<Gradepage/>}/>
+       <Route path="/usecall" element={<Searchcallpage/>}/>
+       <Route path="/greet" element={<Greetpage/>}/>
+       <Route path="/Userprofile" element={<Userprofilepage/>}/>
+       <Route path="/Shopping" element={<Shoppingpage/>}/>
+       <Route path="/task" element={<Taskpage/>}/>
       </Routes>
     </BrowserRouter>
   );
