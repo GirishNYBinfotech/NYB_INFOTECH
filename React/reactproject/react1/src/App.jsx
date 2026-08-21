@@ -6,14 +6,14 @@ import Students from './Components/Routing/pages/Students';
 import StudentDetails from './Components/Routing/pages/StudentDetails';
 import Navbar from './Components/Routing/pages/Navbar';
 import Employeelink from './Components/Routing/Employees/Employeelink';
-import Product from './Components/Routing/Products/Product';
+// import Product from './Components/Routing/Products/Product';
 import Mainroutes from './Components/Routing/ProtectedRoutes/User/Mainroutes';
 import Shoppingcart from './Components/Routing/ProtectedRoutes/Fooddelivery/Shoppingcart';
 import Hospital from './Components/Routing/Task/Hospita';
 import FormPage from './Pages/PracticePages_17-08-2026/FormPage';
 import Multplepage from './Pages/PracticePages_17-08-2026/Multplepage';
 import Newformpage from './Pages/PracticePages_17-08-2026/Newformpage';
-import Loginformpage from './Pages/PracticePages_17-08-2026/Loginformpage';
+// import Loginformpage from './Pages/PracticePages_17-08-2026/Loginformpage';
 import Skillformpage from './Pages/PracticePages_17-08-2026/Skillformpage';
 import Dynamicformpage from './Pages/PracticePages_17-08-2026/Dynamicformpage';
 import Registrationformpage from './Pages/PracticePages_17-08-2026/Registrationformpage';
@@ -37,6 +37,11 @@ import Greetpage from './Pages/Practicepage_20-08-2026/Greetpage';
 import Userprofilepage from './Pages/Practicepage_20-08-2026/Userprofilepage';
 import Shoppingpage from './Pages/Practicepage_20-08-2026/Shoppingpage';
 import Taskpage from './Pages/Practicepage_20-08-2026/Taskpage';
+import Product from './Components/Practice_21-08-2026/Products/Product';
+import Aboutstudent from './Components/Practice_21-08-2026/Student/Aboutstudent';
+import AllDetails from './Components/Practice_21-08-2026/Restaurants/AllDetails';
+import Linkup from './Components/Practice_21-08-2026/Protected_Routes/Linkup';
+import Application from './Components/Practice_21-08-2026/Application/Application';
 
 
 
@@ -49,6 +54,11 @@ function App() {
     {/* <Mainroutes/> */}
     {/* <Shoppingcart/> */}
     {/* <Hospital/> */}
+    {/* <Product/> */}
+    {/* <Aboutstudent/> */}
+    {/* <AllDetails/> */}
+    {/* <Linkup/> */}
+    <Application/>
       <Routes>
        {/* <Route path="/" element={<Home />} />
        <Route path="/about" element={<About/>} />
@@ -57,7 +67,7 @@ function App() {
        <Route path="/Con&unCon" element={<FormPage/>}/>
        <Route path="/inputs" element={<Multplepage/>}/>
        <Route path="/formv" element={<Newformpage/>}/>
-       <Route path="/login" element={<Loginformpage/>}/>
+       {/* <Route path="/login" element={<Loginformpage/>}/> */}
        <Route path="/skillform" element={<Skillformpage/>}/>
        <Route path="/Dynamicform" element={<Dynamicformpage/>}/>
        <Route path="/Rform" element={<Registrationformpage/>}/>
