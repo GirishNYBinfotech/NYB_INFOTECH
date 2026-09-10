@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <h1>JavaScript Event Listeners</h1>
+
+    <button id="clickBtn">Click Me</button>
+    <button id="doubleBtn">Double Click Me</button>
+    <h2>Mouse Events</h2>
+    <div>
+        <p id="moving">mouse moving</p>
+        <p id="enter">Enter</p>
+        <p id="leave">Leave</p>
+        <p id="mouseup">Mouse Up</p>
+        <p id="mouseover">mouseover</p>
+        <p id="box">out of box</p>
+    </div>
+
+    <h2>Keyboard Events</h2>
+    <input type="text" id="keyboardInput" placeholder="Type here">
+
+    <h2>Form Events</h2>
+    <form id="myForm">
+        <input type="text" id="name" placeholder="Enter name">
+        <select id="city">
+            <option value="">Select City</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Chennai">Chennai</option>
+        </select>
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+     <h1>Event bubbling</h1>
+    <div id="parent1">
+        <button id="child1">click</button>
+    </div>
+    <h1>Event capturing</h1>
+    <div id="parent2">
+        <button id="child2">click</button>
+    </div>
+    <h1>Event Delegation</h1>
+    <div id="num">
+        <h4>one</h4>
+        <h4>two</h4>
+        <h4>three</h4>
+        <h4>four</h4>
+    </div>
+    <h1>Normal Event</h1>
+    <input id="normal">
+    <h1>Throttling</h1>
+    <button id="throt">button</button>
+    <h1>Debouncing</h1>
+    <input id="debounce">
+    <script src="./Events.js"></script>
+</body>
+</html>
