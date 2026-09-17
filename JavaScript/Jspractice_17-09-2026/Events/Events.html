@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+<body>
+    <h1>Events Listners</h1>
+    <h2> Click Event</h2>
+    <button id="clickBtn">Click Me</button>
+    <p id="clickResult"></p>
+
+
+    <!-- INPUT EVENT -->
+    <h2>Input Event</h2>
+    <input type="text" id="nameInput" placeholder="Enter your name">
+    <p id="inputResult"></p>
+
+    <!-- CHANGE EVENT -->
+    <h2> Change Event</h2>
+    <select id="course">
+        <option value="">Select Course</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="React">React</option>
+        <option value="Java">Java</option>
+    </select>
+    <p id="changeResult"></p>
+
+    <h2>Submit Event</h2>
+    <form id="myForm">
+        <input type="email" id="email" placeholder="Enter Email" required>
+        <button type="submit">Submit</button>
+    </form>
+    <p id="submitResult"></p>
+
+    <h2>Mouse Events</h2>
+    <div id="mouseBox">
+        Move your mouse here
+    </div>
+    <p id="mouseResult"></p>
+
+    <h2>Keyboard Events</h2>
+    <input type="text" id="keyInput" placeholder="Press any key">
+    <p id="keyboardResult"></p>
+
+    <h1>Events</h1>
+    <h3>Event bubbling</h3>
+    <div id="Eparent">
+        <button id="Echild">click for bubbling</button>
+    </div>
+    <h3>Event capturing</h3>
+     <div id="Eparent1">
+        <button id="Echild1">click for capturing</button>
+    </div>
+    <h3>Event Delegation</h3>
+    <div id="Eparent2">
+        <p>A</p>
+        <p>B</p>
+        <p>c</p>
+        <p>d</p>
+    </div>
+    <h3>Normal Event</h3>
+    <input type="text" placeholder="type for normal event" id="normal">
+    <h3>Throttling</h3>
+    <button id="throt">click</button>
+    <h3>Debouncing</h3>
+    <input type="text" placeholder="type for debouncing" id="debounce">
+    <script src="./Events.js"></script>
+</body>
+</html>
