@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML</title>
+</head>
+<body>
+    <!--Header -->
+    <header>
+        <h1>My HTML Page</h1>
+    </header>
+    <!-- Semantic Element-->
+    <nav>
+        <a href="#form">Form</a> |
+        <a href="#figure">Figure</a> |
+        <a href="#iframe">Iframe</a> |
+        <a href="#details">Details</a>
+    </nav>
+
+    <hr>
+
+    <!-- Main -->
+    <main>
+
+        <!-- SECTION -->
+        <section id="form">
+            <h2>Registration Form</h2>
+            <!-- Fieldset groups related form fields -->
+            <form>
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required minlength="3">
+                    <br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" min="18" max="60" required>
+                    <br><br>
+
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" minlength="6" required>
+                    <br><br>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+                    <br><br>
+                    <button type="submit">Register</button>
+                </fieldset>
+            </form>
+        </section>
+        <hr>
+
+        <!-- FIGURE AND FIGCAPTION -->
+        <section id="figure">
+            <h2>Figure </h2>
+            <figure>
+                <img src="../../HTML_22-09-2026/Images/india.png" alt="image" height="150" width="150">
+                <figcaption>
+                     image using figure and figcaption.
+                </figcaption>
+            </figure>
+        </section>
+        <hr>
+        <!-- IFRAME -->
+        <section id="iframe">
+            <h2>Iframe</h2>
+            <h3>HYD location</h3>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.446046988676!2d78.48667131538462!3d17.38504408807092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb975b2f0f1b3f%3A0x8f6b8f6b8f6b8f6b!2sHyderabad%2C%20Telangana%2C%20India!5e0!3m2!1sen!2sin!4v1660000000000!5m2!1sen!2sin"
+            width="300"
+            height="300">
+        </iframe>
+        <br>
+        <h3>plesent music from youtube</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/I3OJUwILelU?si=dya1hCgP2JuwCpWn">
+        </iframe>
+        </section>
+        <hr>
+        <!-- DETAILS AND SUMMARY -->
+        <section id="details">
+            <h2>Details and Summary Example</h2>
+            <details>
+
+                <!-- Summary is the clickable heading -->
+                <summary>What is HTML5?</summary>
+                <p>HTML5 is the modern version of HTML used to create and structure webpages.</p>
+            </details>
+            <br>
+            <details>
+                <summary>What is Form Validation?</summary>
+                <p>Form validation checks whether the information entered by the user is valid before submitting the form.</p>
+            </details>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <p>&copy; 2026 My HTML Page</p>
+    </footer>
+</body>
+</html>
