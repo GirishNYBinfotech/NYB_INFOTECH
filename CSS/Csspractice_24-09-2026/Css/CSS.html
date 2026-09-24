@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* internal css */
+        h3{
+            color: blue;
+            text-align: center;
+        }
+
+        .internal {
+            color: green;
+            font-size: 20px;
+        }
+
+        /* css selectors */
+        /* selector priority */
+        #i{
+            background-color: cadetblue;
+        }
+        .cla{
+            background-color: brown;
+        }
+        input[type="button"]{
+            background-color: chocolate;
+        }
+        input{
+            background-color: darkblue;
+        }
+
+        /* element */
+        p {
+            color: blue;
+        }
+
+        /* Class Selector */
+        .highlight {
+            background-color: yellow;
+        }
+
+        /* ID Selector */
+        #heading {
+            color: red;
+        }
+
+        /*  Universal Selector */
+        * {
+            background-color: azure;
+        }
+
+        /* Attribute Selector */
+        input[type="text"] {
+            border: 2px solid green;
+        }
+
+        /* Grouping Selector */
+        h2, h3 {
+            color: purple;
+        }
+
+        /* Descendant Selector */
+        .container p {
+            background-color: lightblue;
+        }
+
+        /* Child Selector */
+        .container > p {
+            border: 2px solid orange;
+        }
+
+        /* Adjacent Sibling Selector */
+        h3 + p {
+            color: brown;
+        }
+
+        /*General Sibling Selector */
+        h3 ~ p {
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+    <!--inline css -->
+    <h3 style="color: aqua; text-align: left;">hai</h3>
+    <p style="color: red; font-size: 18px;">This is Inline CSS.</p>
+    <p class="internal">This is Internal CSS.</p>
+    <p class="external">This is External CSS.</p>
+
+    <!-- css selectors -->
+     <!-- selector priority -->
+     <input class="cla" id="i" type="button" value="click">
+
+    <h1 id="heading">CSS Selectors</h1>
+
+    <h2>Element Selector</h2>
+    <p>This paragraph is selected using the element selector.</p>
+
+    <h2>Class Selector</h2>
+    <p class="highlight">This paragraph is selected using the class selector.</p>
+
+    <h2>Attribute Selector</h2>
+    <input type="text" placeholder="Text input">
+    <input type="password" placeholder="Password input">
+
+    <h2>Grouping Selector</h2>
+    <h3>This is H3</h3>
+
+    <div class="container">
+        <p>This is a direct child of div.</p>
+        <section>
+            <p>This is a descendant but NOT a direct child.</p>
+        </section>
+        <h3>Sibling Example</h3>
+        <p>First paragraph after H3.</p>
+        <p>Second paragraph after H3.</p>
+    </div>
+
+
+</body>
+</html>

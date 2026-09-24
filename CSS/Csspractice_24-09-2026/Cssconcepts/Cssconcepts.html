@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css concepts</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+         body {
+            color: rgb(81, 15, 235);
+            background-color: lightgray;
+        }
+
+        .box {
+            width: 400px;
+            height: 200px;
+
+            /* Background */
+            background-color: white;
+            /* background: white url("./image.png") no-repeat center / cover; */
+
+
+            /* Border */
+            /* border: 5px solid blue; */
+            /* border: 5px dashed blue; */
+            /* border: 3px dotted green; */
+            border: 5px double purple;
+            border-radius: 10px;
+
+            /* Padding */
+            padding: 20px;
+            /*  padding-left: 40px; */
+            /* padding-right: 20px; */
+            /* padding-top: 10px; */
+            /* padding-bottom: 30px; */
+            /* padding: 10px 20px 30px 40px; */
+
+            /* Margin */
+            margin: 50px auto;
+            /* margin-top: 10px; */
+            /* margin-right: 20px; */
+            /* margin-bottom: 30px; */
+            /*  margin-left: 40px; */
+            /* margin: 100px 200px 300px 400px; */
+
+            /* Opacity */
+            opacity: 0.9
+            /* opacity:1 */
+            /* opacity:0.5 */
+            /* opacity:0 */
+        }
+        .content {
+            background-color: rgb(94, 151, 29);
+            border: 5px dashed black;
+            width: 300px;
+            height: 80px;
+            padding: 10px;
+            margin: 20px;
+        }
+        /* content box */
+        .box1 {
+            box-sizing: content-box;
+            width: 300px;
+            height: 100px;
+            padding: 20px;
+            border: 5px solid black;
+            margin: 20px;
+        }
+        /* Border box */
+        .box2 {
+            box-sizing: border-box;
+            width: 300px;
+            height: 100px;
+            padding: 20px;
+            border: 5px solid black;
+            margin:30px;
+        }
+        /* Typography */
+        #hello{
+            font-family: Arial;
+            font-size: 20px;
+            font-weight: bold;
+            /* line-height: 1.5; */
+            letter-spacing: 2px;
+            text-align: center;
+            text-decoration: underline
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1 class="title">CSS Box</h1>
+        <div class="content">
+            This is the content inside the box.
+        </div>
+    </div>
+
+    <!-- Box Sizing -->
+    <!-- contentbox -->
+     <h3>content Box</h3>
+    <div class="box1">
+        Content Box
+    </div>
+
+    <!-- border box -->
+     <h3>Border Box</h3>
+     <div class="box2">
+        Border Box
+    </div>
+
+    <div class="parent1">
+    <div class="box3">
+      This is the box
+    </div>
+
+    <!-- Typography -->
+    <p id="hello">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic.</p>
+</body>
+</html>

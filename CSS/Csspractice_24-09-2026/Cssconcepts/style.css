@@ -1,0 +1,28 @@
+/* !important */
+.title {
+     color: red !important;
+     color: rgb(100, 128, 0);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+.parent1{
+    border: 3px solid black;
+    width: 500px;
+    height: 200px;
+    background-color: lightgray;
+    padding: 20px;
+}
+
+.box3{
+    border: 5px solid blue;
+    width: 50%;
+    height: 50%;
+    min-width: 300px;
+    max-width: 500px;
+    padding: 20px;
+    background-color: lightblue;
+}

@@ -1,0 +1,114 @@
+/*Typography*/
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 32px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+
+/*Colors*/
+h1 {
+    color: #2c3e50;
+}
+
+label {
+    color: #34495e;
+}
+
+
+/*Spacing*/
+.container {
+    width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+}
+
+label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+
+/*Borders*/
+.container {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+input,select {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/*Backgrounds*/
+body {
+    background-color: #f4f6f8;
+}
+
+.container {
+    background-color: white;
+}
+
+input,select {
+    background-color: #fff;
+}
+
+
+/*Form Styling*/
+input[type="text"],input[type="email"],select {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+}
+
+.gender {
+    margin-top: 8px;
+}
+
+.gender input {
+    margin-right: 5px;
+}
+
+
+/*Table Styling*/
+table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+th,td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+
+/*Button Styling*/
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
