@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica assignment</title>
+    <link rel="stylesheet" href="Assignment.css">
+</head>
+<body>
+     <header class="header">
+        <div class="logo">
+            TechWorld
+        </div>
+        <!-- Responsive Navigation -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--HERO SECTION-->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to TechWorld</h1>
+            <a href="#services" class="btn">
+                Our Services
+            </a>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about section">
+        <div class="about-text">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure.</p>
+
+            <!-- List -->
+            <ul>
+                <li>Experienced Developers</li>
+                <li>Modern Technologies</li>
+                <li>Customer Support</li>
+            </ul>
+        </div>
+
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72" alt="Modern company office">
+        </div>
+    </section>
+
+
+    <!--SERVICES SECTION-->
+    <section id="services" class="services section">
+        <h2>Our Services</h2>
+        <div class="service-container">
+            <!-- Card 1 -->
+            <article class="card">
+                <h3>Web Development</h3>
+                <p>We create responsive and modern websites.</p>
+                <a href="#">Learn More</a>
+            </article>
+            <!-- Card 2 -->
+            <article class="card">
+                <h3>App Development</h3>
+                <p>We develop mobile applications for businesses.</p>
+                <a href="#">Learn More</a>
+            </article>
+            <!-- Card 3 -->
+            <article class="card">
+                <h3>UI/UX Design</h3>
+                <p>We design simple and user-friendly interfaces.</p>
+                <a href="#">Learn More</a>
+            </article>
+        </div>
+    </section>
+
+    <!--IMAGE / MULTIMEDIA SECTION-->
+    <section class="media-section section">
+        <h2>Our Workplace</h2>
+        <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2" alt="Company workplace">
+        <h3>Company Introduction</h3>
+        <!-- Multimedia -->
+        <video controls width="500">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support video.
+        </video>
+    </section>
+
+    <!--INFORMATION / TABLE -->
+    <section id="team" class="information section">
+        <h2>Our Team</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Experience</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>King</td>
+                    <td>Manager</td>
+                    <td>8 Years</td>
+                </tr>
+                <tr>
+                    <td>Queen</td>
+                    <td>Developer</td>
+                    <td>5 Years</td>
+                </tr>
+                <tr>
+                    <td>Rahul</td>
+                    <td>Designer</td>
+                    <td>4 Years</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+    <!--CONTACT FORM-->
+    <section id="contact" class="contact section">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name</label>
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                required>
+            <label for="email">Email</label>
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required>
+            <label for="phone">Phone</label>
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Enter your phone number">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Enter your message"></textarea>
+            <button type="submit">
+                Send Message
+            </button>
+        </form>
+    </section>
+
+    <!--FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 TechWorld. All Rights Reserved.</p>
+        <div class="footer-links">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+        </div>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,165 @@
+/* BASIC CSS*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* RESPONSIVE CONTAINER*/
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* HEADER */
+header {
+    background-color: #222;
+    color: white;
+    /* Flexbox */
+    display: flex;
+    /* Horizontal Alignment */
+    justify-content: space-between;
+    /* Vertical Alignment */
+    align-items: center;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none; 
+}
+
+
+/* HERO SECTION*/
+.hero {
+    min-height: 300px;
+    /* Flexbox */
+    display: flex;
+    /* Horizontal Alignment */
+    justify-content: center;
+    /* Vertical Alignment */
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* RESPONSIVE IMAGE*/
+.hero img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+
+/*  HORIZONTAL ALIGNMENT */
+.horizontal {
+    text-align: center;
+    padding: 20px;
+}
+
+/* VERTICAL ALIGNMENT*/
+.vertical {
+    height: 150px;
+    background-color: lightblue;
+    /* Flexbox */
+    display: flex;
+    /* Vertical Alignment */
+    align-items: center;
+    /* Horizontal Alignment */
+    justify-content: center;
+}
+
+/* GRID LAYOUT*/
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+/* GRID ALIGNMENT*/
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    /* Grid Alignment */
+    display: grid;
+    /* Horizontal Alignment */
+    justify-items: center;
+    /* Vertical Alignment */
+    align-items: center;
+    text-align: center;
+}
+
+
+/* FLEX ALIGNMENT*/
+.button-container {
+    display: flex;
+    /* Horizontal Alignment */
+    justify-content: center;
+    /* Vertical Alignment */
+    align-items: center;
+    margin: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+
+@media (min-width: 600px) and (max-width:599px) {
+    .cards {
+        /* 2 columns */
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .hero {
+        min-height: 400px;
+    }
+}
+
+@media (min-width: 900px) and (max-width:1199) {
+    .cards {
+        /* 3 columns */
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .hero {
+        /* Horizontal Alignment */
+        justify-content: space-between;
+        /* Vertical Alignment */
+        align-items: center;
+        text-align: left;
+    }
+    .hero-content {
+        width: 50%;
+    }
+    .hero-image {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 80%;
+    }
+    .cards {
+        gap: 30px;
+    }
+}
