@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance CSS</title>
+    <link rel="stylesheet" href="Acss.css">
+    <style>
+        /* CSS Pseudo-Classes */
+        /* :hover */
+        button:hover {
+            background-color: green;
+            color: white;
+        }
+
+        /* :focus */
+        input:focus {
+            border: 3px solid blue;
+            outline: none;
+        }
+
+        /* :active */
+        button:active {
+            background-color: red;
+        }
+
+        /* :visited */
+        a:visited {
+            color: purple;
+        }
+
+        /* :first-child */
+        li:first-child {
+            color: red;
+        }
+
+        /* :last-child */
+        li:last-child {
+            color: green;
+        }
+
+        /* :nth-child() */
+        li:nth-child(3) {
+            background-color: yellow;
+        }
+
+        /* CSS Pseudo-element */
+         /* ::before */
+        h5::before {
+            content: "Hai ";
+        }
+
+        /* ::after */
+        h5::after {
+            content: " Bye";
+        }
+
+        /* ::first-letter */
+        h6::first-letter {
+            font-size: 40px;
+            font-weight: bold;
+            color: red;
+        }
+
+        /* ::first-line */
+        h6::first-line {
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Selectors</h1>
+    <h2> Universal Selector</h2>
+    <div>Universal Example 1</div>
+    <p>Universal Example 2</p>
+    <span>Universal Example 3</span>
+  <hr>
+
+    <h2>Element Selector</h2>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+    <p>Paragraph 3</p>
+  <hr>
+
+    <h2> Class Selector</h2>
+    <div class="highlight">Class Example 1</div>
+    <p class="highlight">Class Example 2</p>
+    <span class="highlight">Class Example 3</span>
+  <hr>
+
+    <h2> ID Selector</h2>
+    <h3 id="heading1">ID Example 1</h3>
+    <h3 id="heading2">ID Example 2</h3>
+    <h3 id="heading3">ID Example 3</h3>
+  <hr>
+
+    <h2 class="group">Group Selector</h2>
+    <h4>Group Example 1</h4>
+    <h4>Group Example 2</h4>
+    <h4>Group Example 3</h4>
+  <hr>
+
+    <h2> Descendant Selector</h2>
+    <div class="container">
+      <p>Descendant Example 1</p>
+      <p>Descendant Example 2</p>
+      <div>
+        <p>Descendant Example 3 - Nested paragraph</p>
+      </div>
+    </div>
+  <hr>
+
+    <h2> Child Selector</h2>
+    <div class="box">
+      <span>Direct Child 1</span>
+      <br>
+      <span>Direct Child 2</span>
+      <br>
+      <span>Direct Child 3</span>
+      <div>
+        <span>Nested span - nested child</span>
+      </div>
+    </div>
+  <hr>
+
+    <h2> Attribute Selector</h2>
+    <input type="text" placeholder="Enter name">
+    <br><br>
+    <input type="email" placeholder="Enter email">
+    <br><br>
+    <input type="password" placeholder="Enter password">
+  <hr>
+
+    <h2>Adjacent Sibling Selector</h2>
+    <div class="adjacent">
+      <h3>Heading A</h3>
+      <p>Example 1 - Immediately after h3</p>
+      <p>Example 2 - Not immediately after h3</p>
+      <h3>Heading B</h3>
+      <p>Example 3 - Immediately after h3</p>
+    </div>
+  <hr>
+
+    <h2>General Sibling Selector</h2>
+    <div class="siblings">
+      <h3>Heading C</h3>
+      <p>General Sibling Example 1</p>
+      <div>Another element between paragraphs</div>
+      <p>General Sibling Example 2</p>
+      <p>General Sibling Example 3</p>
+    </div>
+    <hr><br>
+
+    <h1>CSS Pseudo-Classes</h1>
+    <button>Click Me</button>
+    <br><br>
+    <input type="text" placeholder="Click and type here">
+    <br><br>
+    <a href="https://www.google.com" target="_blank">Google</a>
+    <h3>List</h3>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Orange</li>
+        <li>Mango</li>
+        <li>Grapes</li>
+    </ul>
+
+    <h1>CSS Pseudo-Element</h1>
+    <h5>Welcome to CSS</h5>
+    <h6>
+        This is a simple paragraph to understand CSS pseudo-elements.
+        Pseudo-elements allow us to style a specific part of an element.
+    </h6>
+</body>
+</html>

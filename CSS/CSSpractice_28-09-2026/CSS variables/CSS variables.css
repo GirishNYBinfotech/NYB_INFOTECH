@@ -1,0 +1,47 @@
+div {
+  color: blue;
+}
+
+.box {
+  color: green;
+}
+
+#container {
+  color: rgb(224, 8, 8);
+}
+
+p {
+  color: purple;
+}
+
+.text {
+  color: rgb(236, 163, 4);
+}
+
+section{
+    background: blue;
+}
+
+#sec{
+    background-color: blueviolet;
+}
+
+h3{
+    background: greenyellow;
+    border:2px double rgb(198, 212, 4)
+}
+
+.h3tag{
+    background-color: aqua;
+    border:2px dotted gray
+}
+
+#h3{
+    background-color: chartreuse;
+    border:2px hidden rgb(13, 145, 68)
+}
+
+.sec1{
+    background-color: chocolate;
+    border:2px solid rgb(155, 54, 54)
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling&variables</title>
+    <link rel="stylesheet" href="CSS variables.css">
+    <style>
+        body {
+            background-color: lightgray;
+            color: black;
+        }
+        .box {
+            width: 300px;
+            height: 150px;
+            background: lightblue;
+            padding: 20px;
+            border: 5px solid blue;
+            border-radius: 10px;
+            margin: 30px;
+        }
+
+        .heading {
+            color: white;
+            background-color: darkblue;
+            border: 3px solid black;
+            padding: 10px;
+            width: 500px;
+            font-size: medium;
+        }
+        :root {
+            --primary-color: blue;
+            --secondary-color: white;
+            --font-size: 18px;
+            --border-radius: 10px;
+            --main-color: rgb(151, 14, 14);
+            --heading-size: 32px;
+            --paragraph-size: 20px;
+        }
+
+        button {
+            background-color: var(--primary-color);
+            color: var(--secondary-color);
+            font-size: var(--font-size);
+            border-radius: var(--border-radius);
+            
+        }
+        button:active{
+            color:var(--main-color);
+        }
+        h1:active {
+            color: var(--primary-color);
+        }
+        /* p {
+            font-size: var(--paragraph-size);
+            background-color: var(--main-color);
+            width: 300px;
+        } */
+
+        /* CSS specificity and inheritance. */
+        #continer{
+            background-color: rgb(34, 34, 128);
+        }
+        .parent{
+            background-color: blueviolet;
+        }
+        .text{
+            background-color: brown;
+        }
+        p{
+            background-color: aqua;
+        }
+        div{
+            background-color: chocolate;
+        }
+
+        section{
+            color: rgb(0, 183, 255);
+        }
+
+        #sec{
+            color: bluevioletrgb(96, 75, 116)
+        }
+
+        .h3tag{
+            color: rgb(12, 226, 5);
+        }
+
+        h3{
+            color: rgb(47, 102, 255);
+        }
+        .sec1{
+            color: rgb(226, 212, 7);
+        }
+
+        #h3{
+            color: rgb(255, 0, 13);
+        }   
+
+        
+    </style>
+</head>
+<body>
+    <h1 class="heading">CSS Colors, Borders and Box Model</h1>
+    <div class="box">
+        <h2>Hello CSS</h2>
+        <p>This is CSS Colors, Borders and Box Model<p>
+    </div>
+
+    <h1>Hello World</h1>
+    <!-- <p>This is paragraph</p> -->
+    <button>Click Me</button>
+
+    <br>
+    <!-- CSS specificity and inheritance. -->
+    <div id="container" class="parent">
+        <p class="text">Hello</p>
+    </div>
+    <section id="sec" class="sec1">
+        <h3 class="h3tag" id="h3">new example</h3>
+    </section>
+</body>
+</html>

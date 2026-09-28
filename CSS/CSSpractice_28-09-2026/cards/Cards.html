@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Card</title>
+    <link rel="stylesheet" href="cards.css">
+  <style>
+    :root {
+      --primary-color: #2563eb;
+      --secondary-color: #f1f5f9;
+      --text-color: #1e293b;
+      --border-color: #0eeb7c;
+      --card-width: 350px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e2e8f0;
+      color: var(--text-color);
+    }
+
+    .card {
+      width: var(--card-width);
+      padding: 25px;
+      margin: 50px auto;
+      border: 2px solid var(--border-color);
+      border-radius: 12px;
+      background-color: white;
+      box-shadow: 0 50px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    input[type="text"] {
+      border: 2px solid var(--border-color);
+      padding: 8px;
+      border-radius: 5px;
+    }
+
+    a[target="_blank"] {
+      color: var(--primary-color);
+    }
+
+    .card p {
+      line-height: 1.6;
+    }
+    .card > h2 {
+      color: var(--primary-color);
+    }
+    h2 + p {
+      font-weight: bold;
+    }
+    h2 ~ p {
+      color: #475569;
+    }
+
+    /* PSEUDO-CLASSES*/
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    input:focus {
+      outline: 3px solid #93c5fd;
+      border-color: var(--primary-color);
+    }
+
+    button:active {
+      transform: scale(0.95);
+    }
+
+    a:visited {
+      color: rgb(202, 6, 202);
+    }
+
+
+    ul li:first-child {
+      font-weight: bold;
+      color: green;
+    }
+
+    ul li:last-child {
+      color: red;
+    }
+
+    ul li:nth-child(2) {
+      background-color: #fef3c7;
+    }
+
+
+    /*PSEUDO-ELEMENTS*/
+    .card h2::before {
+      content: "Hai ";
+    }
+
+    .card h2::after {
+      content: ",Hello";
+      color: green;
+    }
+
+    .description::first-letter {
+      font-size: 30px;
+      font-weight: lighter;
+      color: var(--primary-color);
+    }
+
+    .description::first-line {
+      font-weight: bold;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      background-color: var(--primary-color);
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1d4ed8;
+    }
+
+    .skills {
+      border: 1px solid var(--border-color);
+      padding: 10px;
+      border-radius: 8px;
+    }
+  </style>
+
+</head>
+<body>
+  <div class="card">
+    <h2>Girish</h2>
+    <p class="description">welcome to card
+      Lorem ipsum dolor sit amet consectetur.
+    </p>
+    <input type="text" placeholder="Enter your name">
+    <div class="skills">
+      <p>Skills</p>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+      </ul>
+    </div>
+    <br>
+    <a href="https://google.com"target="_blank">Visit site</a>
+    <br><br>
+    <button>Contact Me</button>
+  </div>
+</body>
+</html>
