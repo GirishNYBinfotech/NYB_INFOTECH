@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css flexbox</title>
+    <link rel="stylesheet" href="cssflexbox.css">
+    <style>
+        /* Flex Container row*/
+        .container {
+            display: flex;
+            flex-direction: row;
+            /* flex-direction: row-reverse; */
+            flex-wrap: wrap;
+
+            /* Space between items */
+            gap: 10px;
+
+            /* Horizontal alignment */
+            /* justify-content: space-between; */
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+            /* justify-content: center; */
+            /* justify-content: flex-end; */
+            /* justify-content: flex-start; */
+
+            /* Vertical alignment */
+            align-items: center;
+            /* align-items: flex-end; */
+            /* align-items: flex-start; */
+
+            /* Alignment of multiple rows */
+            /* align-content: space-around; */
+            /* align-content: flex-start; */
+            align-content: center;
+            /* align-items: flex-end; */
+            /* align-items: space-evenly; */
+            width: 600px;
+            height: 300px;
+            border: 3px solid black;
+            padding: 10px;
+        }
+
+        /* Flex Items */
+        .item {
+            width: 100px;
+            height: 60px;
+            background-color: lightblue;
+            border: 2px solid blue;
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        /* flex-grow */
+        .item1 {
+            flex-grow: 1;
+        }
+
+        /* flex-shrink */
+        .item2 {
+            flex-shrink: 2;
+        }
+
+        /* flex-basis */
+        .item3 {
+            flex-basis: 150px;
+        }
+
+        /* order */
+        .item4 {
+            order: -1;
+        }
+
+        .item5 {
+            order: 2;
+        }
+        /* Flex Container row*/
+        #container1 {
+            display: flex;
+            flex-direction: column;
+            /* flex-direction: column-reverse; */
+            height: 300px;
+            width :500px;
+            border: 3px solid black;
+            gap:10px;
+
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* justify-content: center; */
+            /* justify-content: space-around; */
+            /* justify-content: flex-end; */
+            justify-content: flex-start;
+
+            /* Vertical alignment */
+            align-items: center;
+            /* align-items: flex-end; */
+            /* align-items: flex-start; */
+
+            /* Alignment of multiple rows */
+            /* align-content: space-around; */
+            /* align-content: flex-start; */
+            align-content: center;
+        }
+        .items{
+            width: 80px;
+            height: 30px;
+            border: 2px solid black;
+            background-color: rgb(97, 72, 121);
+            color: rgb(253, 137, 4);
+        }
+    </style>
+</head>
+<body>
+    <h3>flex row</h3>
+     <div class="container">
+        <div class="item item1">Item 1<br>grow</div>
+        <div class="item item2">Item 2<br>shrink</div>
+        <div class="item item3">Item 3<br>basis</div>
+        <div class="item item4">Item 4<br>order</div>
+        <div class="item item5">Item 5<br>order</div>
+    </div>
+    <h3>flex coloumn</h3>
+    <div id="container1">
+        <div class="items items1">Items1</div>
+        <div class="items items2">Items2</div>
+        <div class="items items3">Items3</div>
+        <div class="items items4">Items4</div>
+        <div class="items items4">Items4</div>
+        <div class="items items5">Items5</div>
+    </div>
+    <br>
+    <hr>
+
+    <!-- Responsive desgin -->
+    <nav class="navbar">
+        <div class="logo">MyWebsite</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <br>
+
+    <!-- cards -->
+    <h2 class="allcards">cards</h2>
+    <div class="card-container">
+        <div class="card">
+            <h2>Card 1</h2>
+            <p>This is the first card.</p>
+            <button>Read More</button>
+        </div>
+
+        <div class="card">
+            <h2>Card 2</h2>
+            <p>This is the second card.</p>
+            <button>Read More</button>
+        </div>
+
+        <div class="card">
+            <h2>Card 3</h2>
+            <p>This is the third card.</p>
+            <button>Read More</button>
+        </div>
+    </div>
+</body>
+</html>
