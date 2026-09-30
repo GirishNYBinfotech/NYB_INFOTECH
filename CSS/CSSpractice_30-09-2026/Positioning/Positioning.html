@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <link rel="stylesheet" href="Positioning.css">
+    <style>
+        .postion {
+            font-family: Arial;
+        }
+
+        /* STATIC */
+        .static {
+            position: static;
+            background-color: lightblue;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        /* RELATIVE */
+        .relative {
+            position: relative;
+            left: 50px;
+            top: 20px;
+            background-color: lightgreen;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .parent {
+            position: relative;
+            width: 400px;
+            height: 200px;
+            background-color: lightgray;
+            margin: 40px 20px;
+        }
+
+        /* ABSOLUTE */
+        .absolute {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            background-color: orange;
+            padding: 20px;
+        }
+
+        /* 4. FIXED */
+        .fixed {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            background-color: red;
+            color: white;
+            padding: 15px;
+        }
+
+        /* 5. STICKY */
+        .sticky {
+            position: sticky;
+            top: 0;
+            background-color: purple;
+            color: white;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="position">
+        <div class="sticky">
+            Sticky Position
+        </div>
+        <div class="static">
+            Static Position
+        </div>
+
+        <div class="relative">
+            Relative Position
+        </div>
+
+        <div class="parent">
+            Parent Element
+            <div class="absolute">
+                Absolute Position
+            </div>
+        </div>
+
+        <div class="fixed">
+            Fixed Position
+        </div>
+    </div>
+    
+    <!-- z-index -->
+    <h2>Z-Index </h2>
+    <div class="z-container">
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+    </div>
+</body>
+</html>

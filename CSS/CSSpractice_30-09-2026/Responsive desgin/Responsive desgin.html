@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <link rel="stylesheet" href="Responsive desgin.css">
+    <style>
+
+        /* MOBILE-FIRST DESIGN*/
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Header */
+        header {
+            background-color: navy;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: clamp(24px, 5vw, 50px);
+        }
+
+        /* Cards */
+        .cards {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .card h2 {
+            font-size: clamp(20px, 3vw, 32px);
+        }
+
+        .card p {
+            font-size: 16px;
+        }
+
+
+        /* MEDIA QUERY*/
+        @media (min-width: 600px) and (max-width:899px) {
+            .cards {
+                grid-template-columns: repeat(2, 1fr)
+            }
+            .card p {
+                font-size: 18px;
+            }
+        }
+
+
+        /* MEDIA QUERY*/
+        @media (min-width: 900px) {
+            .cards {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            header {
+                padding: 30px;
+            }
+        }
+
+
+        /* max-width */
+        @media (max-width: 599px) {
+            header {
+                background-color: darkgreen;
+            }
+        }
+
+        /* css transition */
+        button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            transition: background-color 3s;
+        }
+        button:hover {
+            background-color: red;
+        }
+
+        /* css transform */
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin: 20px;
+            /* transform: translate(50px, 30px); */
+            /* transform: rotate(45deg); */
+            /* transform: scale(0.5); */
+            transform: skew(20deg);
+        }
+
+        /* transition & transform */
+        .btn{
+            padding: 10px 20px;
+            background-color: rgb(255, 0, 234);
+            color: white;
+            transition: transform 0.5s;
+        }
+
+        .btn:hover {
+            transform: scale(1.2);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Responsive Web Design</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="cards">
+            <div class="card">
+                <h2>Card 1</h2>
+                <img src="https://picsum.photos/500/300?random=1" alt="Nature">
+                <p>Image1</p>
+            </div>
+
+            <div class="card">
+                <h2>Card 2</h2>
+                <img src="https://picsum.photos/500/300?random=2" alt="Nature">
+                <p>Image2</p>
+            </div>
+
+            <div class="card">
+                <h2>Card 3</h2>
+                <img src="https://picsum.photos/500/300?random=3" alt="Nature">
+                <p>Image 3</p>
+            </div>
+        </div>
+    </main>
+    <h3>css transition</h3>
+    <button> Hover here</button>
+    <br><br>
+    <h3>css transforms</h3>
+    <div class="box">Box</div>
+    <br>
+    <button class="btn">Hover here</button>
+    <br>
+     <h1>CSS Animation </h1>
+    <div class="container1">
+        <div class="box1">
+            CSS
+        </div>
+    </div>
+    
+</body>
+</html>
