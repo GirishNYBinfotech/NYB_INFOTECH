@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html practice</title>
+</head>
+<body>
+    <!-- HTML STRUCTURE -->
+    <header>
+        <h1>My HTML Learning Page</h1>
+        <!-- LINKS-->
+        <nav>
+            <a href="https://www.google.com" target="_blank">Google</a> |
+            <a href="#about">About</a> |
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <hr>
+    <!--SEMANTIC HTML-->
+    <main>
+        <section id="about">
+            <!--HEADINGS AND PARAGRAPHS-->
+            <h2>About HTML</h2>
+            <h3>What is HTML?</h3>
+            <p>HTML stands for <strong>HyperText Markup Language</strong>.It is <b>used</b> to <i>create</i> the <em>structure</em> of web pages.</p>
+            <p> Lorem ipsum, <mark>dolor sit</mark> amet consectetur adipisicing elit. Illo.</p>
+
+            <!--IMAGES -->
+            <h2>Image Example</h2>
+            <img src="../image.png" alt=" image" width="300">
+        </section>
+
+        <hr>
+        <!-- LISTS-->
+        <section>
+            <h2>Lists</h2>
+            <!-- Unordered List -->
+            <h3>Programming Languages</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+            </ul>
+
+
+            <!-- Ordered List -->
+            <ol>
+                <li>Create HTML structure</li>
+                <li>Add CSS</li>
+                <li>Add JavaScript</li>
+                <li>Open in browser</li>
+            </ol>
+
+
+            <!-- Description List -->
+            <h3>Web Technologies</h3>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Creates the structure of a webpage.</dd>
+
+                <dt>CSS</dt>
+                <dd>Styles the webpage.</dd>
+
+                <dt>JavaScript</dt>
+                <dd>Adds functionality</dd>
+            </dl>
+        </section>
+
+        <hr>
+        <!-- TABLE -->
+        <section>
+            <h2>Student Table</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Course</th>
+                        <th>Marks</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Ravi</td>
+                        <td>HTML</td>
+                        <td>85</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>John</td>
+                        <td>CSS</td>
+                        <td>90</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>David</td>
+                        <td>JavaScript</td>
+                        <td>95</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+        <!-- FORM -->
+        <section id="contact">
+            <h2>Registration Form</h2>
+            <form>
+                <!-- Text Input -->
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+                <br><br>
+
+                <!-- Email -->
+                <label for="email">Email:</label>
+                <input type="email"id="email" name="email" placeholder="Enter your email">
+                <br><br>
+
+                <!-- Password -->
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <br><br>
+
+                <!-- Radio Buttons -->
+                <p>Gender:</p>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <br><br>
+
+                <!-- Checkbox -->
+                <p>Skills:</p>
+                <input type="checkbox" id="html" name="skills" value="html">
+                <label for="html">HTML</label>
+
+                <input type="checkbox" id="css" name="skills" value="css">
+                <label for="css">CSS</label>
+
+                <input type="checkbox" id="js" name="skills" value="javascript">
+                <label for="js">JavaScript</label>
+                <br><br>
+
+                <!-- Select -->
+                <label for="course">Choose Course:</label>
+                <select id="course" name="course">
+                    <option value="">Select</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">JavaScript</option>
+                </select>
+                <br><br>
+                <!-- Textarea -->
+                <label for="message">Message:</label>
+                <br>
+                <textarea id="message" name="message" rows="5" cols="30" placeholder="Enter your message">
+                </textarea>
+                <br><br>
+                <!-- Submit Button -->
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+
+        <hr>
+        <!-- MULTIMEDIA -->
+        <section>
+            <h2>Multimedia</h2>
+            <!-- Audio -->
+            <h3>Audio</h3>
+            <audio controls muted>
+                <source src="../3_seconds_sms.mp3" type="audio/mpeg">
+            </audio>
+
+            <!-- Video -->
+            <h3>Video</h3>
+            <video width="400" controls loop autoplay>
+                <source src="../vedio.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <hr>
+        <!--IFRAME -->
+        <section>
+            <h2>Iframe </h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.446013019476!2d78.48667131538492!3d17.38504408807088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb975b2f0f1b2d%3A0x8f6f8b1b0b0b0b0!2sHyderabad%2C%20Telangana%2C%20India!5e0!3m2!1sen!2sin!4v1660000000000!5m2!1sen!2sin"
+                width="400"
+                height="450">
+            </iframe>
+
+        </section>
+
+        <hr>
+        <!-- HTML ENTITIES -->
+        <section>
+            <h2>HTML Entities</h2>
+            <p>Less than: &lt;</p>
+            <p>Greater than: &gt;</p>
+            <p>Ampersand: &amp;</p>
+            <p>Copyright: &copy; 2026</p>
+            <p>Registered trademark: &reg;</p>
+        </section>
+    </main>
+
+    <hr>
+    <!--FOOTER-->
+    <footer>
+        <p>&copy; 2026 My HTML Learning Page</p>
+    </footer>
+</body>
+</html>
