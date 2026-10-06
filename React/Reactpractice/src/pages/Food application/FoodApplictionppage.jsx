@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../Components/practice_05-10-2026/Foodapplication/style.css'
+// import '../../Components/practice_05-10-2026/Foodapplication/style.css'
 import Header from '../../Components/practice_05-10-2026/Foodapplication/header'
 import FoodItem from '../../Components/practice_05-10-2026/Foodapplication/FoodItem'
 import FoodList from '../../Components/practice_05-10-2026/Foodapplication/FoodList'
