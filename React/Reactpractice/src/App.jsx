@@ -10,6 +10,13 @@ import Counterpage from './pages/Practicepage_06-10-2026/Counterpage/Counterpage
 import Conditionalpage from './pages/Practicepage_06-10-2026/Conditional rendering/Conditionalpage'
 import Studentpage from './pages/Practicepage_06-10-2026/Studentmanagment page/Studentpage'
 import Miniassignment from './pages/Practicepage_06-10-2026/Miniassignment/Miniassignment'
+import EventHandlingpage from './pages/Practicepage_07-10-2026/EventHandlingpage'
+import FormHandlingpage from './pages/Practicepage_07-10-2026/FormHandlingpage'
+import UserFormpage from './pages/Practicepage_07-10-2026/UserFormpage'
+import Mappage from './pages/Practicepage_07-10-2026/Mappage'
+import ConditionalRenderingpage from './pages/Practicepage_07-10-2026/ConditionalRenderingpage'
+import Useeffectpage from './pages/Practicepage_07-10-2026/Useeffectpage'
+import Registrationformpage from './pages/Practicepage_07-10-2026/Registrationformpage'
 
 function App() {
   return (
@@ -25,6 +32,13 @@ function App() {
         <Route path="/conditional" element={<Conditionalpage/>} />
         <Route path="/Student" element={<Studentpage/>} />
         <Route path="/productA" element={<Miniassignment/>} />
+        <Route path="/Eventhandling" element={<EventHandlingpage/>} />
+        <Route path="/formhandling" element={<FormHandlingpage/>} />
+        <Route path="/Userform" element={<UserFormpage/>} />
+        <Route path="/map" element={<Mappage/>} />
+        <Route path="/conditionalR" element={<ConditionalRenderingpage/>} />
+        <Route path="/Useeffect" element={<Useeffectpage/>} />
+        <Route path="/Registration" element={<Registrationformpage/>} />
       </Routes>
     </BrowserRouter>
   )
