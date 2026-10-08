@@ -17,6 +17,11 @@ import Mappage from './pages/Practicepage_07-10-2026/Mappage'
 import ConditionalRenderingpage from './pages/Practicepage_07-10-2026/ConditionalRenderingpage'
 import Useeffectpage from './pages/Practicepage_07-10-2026/Useeffectpage'
 import Registrationformpage from './pages/Practicepage_07-10-2026/Registrationformpage'
+import Axiospage from './pages/Practicepage_08-10-2026/Axiospage'
+import APIpage from './pages/Practicepage_08-10-2026/APIpage'
+import APISF from './Components/Practice_08-10-2026/Search filter/APISF'
+import Employeedatapage from './pages/Practicepage_08-10-2026/Employeedatapage'
+import Datapage from './pages/Practicepage_08-10-2026/Datapage'
 
 function App() {
   return (
@@ -39,6 +44,11 @@ function App() {
         <Route path="/conditionalR" element={<ConditionalRenderingpage/>} />
         <Route path="/Useeffect" element={<Useeffectpage/>} />
         <Route path="/Registration" element={<Registrationformpage/>} />
+        <Route path="/axios" element={<Axiospage/>} />
+        <Route path="/api" element={<APIpage/>} />
+        <Route path="/apisf" element={<APISF/>} />
+        <Route path="/emp" element={<Employeedatapage/>} />
+        <Route path="/Data" element={<Datapage/>} />
       </Routes>
     </BrowserRouter>
   )
