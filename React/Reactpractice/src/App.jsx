@@ -22,6 +22,12 @@ import APIpage from './pages/Practicepage_08-10-2026/APIpage'
 import APISF from './Components/Practice_08-10-2026/Search filter/APISF'
 import Employeedatapage from './pages/Practicepage_08-10-2026/Employeedatapage'
 import Datapage from './pages/Practicepage_08-10-2026/Datapage'
+import Context from './pages/Practicepage_09-10-2026/Context'
+import UserProfilepage from './pages/Practicepage_09-10-2026/UserProfilepage'
+import Customhookpage from './pages/Practicepage_09-10-2026/Customhookpage'
+import FetchDatapage from './pages/Practicepage_09-10-2026/FetchDatapage'
+import Renderingpage from './pages/Practicepage_09-10-2026/Renderingpage'
+import Employeepages from './pages/Practicepage_09-10-2026/Employeepages'
 
 function App() {
   return (
@@ -49,6 +55,12 @@ function App() {
         <Route path="/apisf" element={<APISF/>} />
         <Route path="/emp" element={<Employeedatapage/>} />
         <Route path="/Data" element={<Datapage/>} />
+        <Route path="/context" element={<Context/>} />
+        <Route path="/user" element={<UserProfilepage/>} />
+        <Route path="/reuse" element={<Customhookpage/>} />
+        <Route path="/fetch" element={<FetchDatapage/>} />
+        <Route path="/cRendering" element={<Renderingpage/>} />
+        <Route path="/Emp1" element={<Employeepages/>} />
       </Routes>
     </BrowserRouter>
   )
