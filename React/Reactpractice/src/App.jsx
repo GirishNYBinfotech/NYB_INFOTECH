@@ -28,10 +28,24 @@ import Customhookpage from './pages/Practicepage_09-10-2026/Customhookpage'
 import FetchDatapage from './pages/Practicepage_09-10-2026/FetchDatapage'
 import Renderingpage from './pages/Practicepage_09-10-2026/Renderingpage'
 import Employeepages from './pages/Practicepage_09-10-2026/Employeepages'
+import EMPpage from './pages/Practicepage_12-10-2026/EMPpage'
+import Layoutroute from './Components/Practice_12-10-2026/Nested route and layout/Layoutroute'
+import Productpage from './pages/Practicepage_12-10-2026/Productpage'
+import Mainroute from './Components/Practice_12-10-2026/Protected routes/Mainroute'
+import Routess from './Components/Practice_12-10-2026/Multipages/Routess'
+import RoutesS from './Components/Practice_12-10-2026/Protected-route/RoutesS'
+import EmpDetails from '../../../../10api/Employee/EmpDetails'
 
 function App() {
   return (
+    
     <BrowserRouter>
+    {/* <EMPpage/> */}
+    {/* <Layoutroute/> */}
+    {/* <Mainroute/> */}
+    {/* <Routess/> */}
+    {/* <RoutesS/> */}
+    <EmpDetails/>
       <Routes>
         <Route path="/functional" element={<Functionalpage/>} />
         <Route path="/multipage" element={<Multipage/>} />
@@ -61,6 +75,7 @@ function App() {
         <Route path="/fetch" element={<FetchDatapage/>} />
         <Route path="/cRendering" element={<Renderingpage/>} />
         <Route path="/Emp1" element={<Employeepages/>} />
+        <Route path="/pro" element={<Productpage/>} />
       </Routes>
     </BrowserRouter>
   )
