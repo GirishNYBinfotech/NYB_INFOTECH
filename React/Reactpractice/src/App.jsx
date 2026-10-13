@@ -35,6 +35,12 @@ import Mainroute from './Components/Practice_12-10-2026/Protected routes/Mainrou
 import Routess from './Components/Practice_12-10-2026/Multipages/Routess'
 import RoutesS from './Components/Practice_12-10-2026/Protected-route/RoutesS'
 import EmpDetails from '../../../../10api/Employee/EmpDetails'
+import Usereduserpage from './pages/Practicepage_13-10-2026/Usereduserpage'
+import Usereduserandusestate from './pages/Practicepage_13-10-2026/Usereduserandusestate'
+import Operationpage from './pages/Practicepage_13-10-2026/Operationpage'
+import Userpage from './pages/Practicepage_13-10-2026/Userpage'
+import Emppages from './pages/Practicepage_13-10-2026/Emppages'
+import Emppage2 from './pages/Practicepage_13-10-2026/Emppage2'
 
 function App() {
   return (
@@ -45,7 +51,7 @@ function App() {
     {/* <Mainroute/> */}
     {/* <Routess/> */}
     {/* <RoutesS/> */}
-    <EmpDetails/>
+    {/* <EmpDetails/> */}
       <Routes>
         <Route path="/functional" element={<Functionalpage/>} />
         <Route path="/multipage" element={<Multipage/>} />
@@ -76,6 +82,12 @@ function App() {
         <Route path="/cRendering" element={<Renderingpage/>} />
         <Route path="/Emp1" element={<Employeepages/>} />
         <Route path="/pro" element={<Productpage/>} />
+        <Route path="/count" element={<Usereduserpage/>} />
+        <Route path="/stateandreduser" element={<Usereduserandusestate/>} />
+        <Route path="/op" element={<Operationpage/>} />
+        <Route path="/user1" element={<Userpage/>} />
+        <Route path="/empp1" element={<Emppage2/>} />
+        <Route path="/empp" element={<Emppages/>} />
       </Routes>
     </BrowserRouter>
   )
