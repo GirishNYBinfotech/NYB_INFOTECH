@@ -34,13 +34,17 @@ import Productpage from './pages/Practicepage_12-10-2026/Productpage'
 import Mainroute from './Components/Practice_12-10-2026/Protected routes/Mainroute'
 import Routess from './Components/Practice_12-10-2026/Multipages/Routess'
 import RoutesS from './Components/Practice_12-10-2026/Protected-route/RoutesS'
-import EmpDetails from '../../../../10api/Employee/EmpDetails'
 import Usereduserpage from './pages/Practicepage_13-10-2026/Usereduserpage'
 import Usereduserandusestate from './pages/Practicepage_13-10-2026/Usereduserandusestate'
 import Operationpage from './pages/Practicepage_13-10-2026/Operationpage'
 import Userpage from './pages/Practicepage_13-10-2026/Userpage'
 import Emppages from './pages/Practicepage_13-10-2026/Emppages'
 import Emppage2 from './pages/Practicepage_13-10-2026/Emppage2'
+import Rerenderingpage from './pages/Practicepage14-10-2026/Rerenderingpage'
+import Usememopage from './pages/Practicepage14-10-2026/Usememopage'
+import Usecallbackpage from './pages/Practicepage14-10-2026/Usecallbackpage'
+import Lazylodinf from './Components/Practice_14-10-2026/Lazyloding/Lazylodinf'
+import EmpDashboardpage from './pages/Practicepage14-10-2026/EmpDashboardpage'
 
 function App() {
   return (
@@ -52,6 +56,7 @@ function App() {
     {/* <Routess/> */}
     {/* <RoutesS/> */}
     {/* <EmpDetails/> */}
+    {/* <Lazylodinf/> */}
       <Routes>
         <Route path="/functional" element={<Functionalpage/>} />
         <Route path="/multipage" element={<Multipage/>} />
@@ -88,6 +93,10 @@ function App() {
         <Route path="/user1" element={<Userpage/>} />
         <Route path="/empp1" element={<Emppage2/>} />
         <Route path="/empp" element={<Emppages/>} />
+        <Route path="/rerendring" element={<Rerenderingpage/>} />
+        <Route path="/usememo" element={<Usememopage/>} />
+        <Route path="/usecallback" element={<Usecallbackpage/>} />
+        <Route path="/empdashboard" element={<EmpDashboardpage/>} />
       </Routes>
     </BrowserRouter>
   )
