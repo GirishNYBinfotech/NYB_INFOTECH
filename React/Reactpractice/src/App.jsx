@@ -45,6 +45,14 @@ import Usememopage from './pages/Practicepage14-10-2026/Usememopage'
 import Usecallbackpage from './pages/Practicepage14-10-2026/Usecallbackpage'
 import Lazylodinf from './Components/Practice_14-10-2026/Lazyloding/Lazylodinf'
 import EmpDashboardpage from './pages/Practicepage14-10-2026/EmpDashboardpage'
+import Refactor from './pages/Practicepage_15-10-2026/Refactorpage'
+import Reusablepage from './pages/Practicepage_15-10-2026/Reusablepage'
+import CoustemHookpage from './pages/Practicepage_15-10-2026/CoustemHookpage'
+import Userpages from './pages/Practicepage_15-10-2026/Userpages'
+import Fetchdatapage from './pages/Practicepage_15-10-2026/Fetchdatapage'
+import Loaddatapage from './pages/Practicepage_15-10-2026/Loaddatapage'
+import ErrorBoundarypage from './pages/Practicepage_15-10-2026/ErrorBoundarypage'
+import Epage from './pages/Practicepage_15-10-2026/Epage'
 
 function App() {
   return (
@@ -97,6 +105,14 @@ function App() {
         <Route path="/usememo" element={<Usememopage/>} />
         <Route path="/usecallback" element={<Usecallbackpage/>} />
         <Route path="/empdashboard" element={<EmpDashboardpage/>} />
+        <Route path="/refactor" element={<Refactor/>} />
+        <Route path="/reusable" element={<Reusablepage/>} />
+        <Route path="/Coustem" element={<CoustemHookpage/>} />
+        <Route path="/up" element={<Userpages/>} />
+        <Route path="/fd" element={<Fetchdatapage/>} />
+        <Route path="/ErrorBoundary" element={<ErrorBoundarypage/>} />
+        <Route path="/ld" element={<Loaddatapage/>} />
+        <Route path="/epage" element={<Epage/>} />
       </Routes>
     </BrowserRouter>
   )
