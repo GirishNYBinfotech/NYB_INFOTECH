@@ -1,16 +1,72 @@
-# React + Vite
+React LoginForm:-
+1. Project Overview:
+This project is a simple Login Form built using React and the useState Hook. It allows users to enter their email address and password, validates the input, and displays error or success messages based on the validation results.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+2. Features:
+Email Validation: Checks whether the email contains the @ symbol.
+Password Validation: Ensures the password contains at least 6 characters.
+Error Messages: Displays an error message when the entered information is invalid.
+Success Message: Displays "Login successful!" when both validation checks pass.
+State Management: Uses React's useState Hook to manage email, password, error, and success states.
+Controlled Inputs: Uses React state to control the values of the email and password fields.
+Form Submission: Uses handleSubmit to process the form without refreshing the page.
 
-Currently, two official plugins are available:
+3. Technologies Used:
+React
+JavaScript (ES6+)
+JSX
+HTML
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+4. file path:
+PS C:\Users\Srinivasa Rao\Desktop\NYB\NYB Programs\React\Reactpractice\LoginForm
 
-## React Compiler
+5. Loginform image
+### Login Form
+![Login Form](../Reactpractice/src/Components/Practice_16-10-2026/Login/output.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+//practical assignment
+# React Employee Management System
+
+## Overview
+A simple employee management application built using React.
+
+## Features
+- Login and protected routes
+- Dashboard and employee details
+- Add, edit and delete employees
+- Search and department filtering
+- Context API and useReducer
+- Custom Hook
+- React.memo and useMemo
+- Lazy-loaded pages
+- API loading and error handling
+- Error Boundary
+- Component and interaction tests
+
+## Technologies
+- React
+- Vite
+- React Router
+- Context API
+- useReducer
+- React Testing Library
+- Vitest
+
+## Installation
+npm install
+npm run dev
+
+## Testing
+npm run test:run
+
+## Production Build
+npm run build
+
+## Demo Login
+Username: admin
+Password: 1234
+
+Note: Demo credentials are hardcoded for learning only.
+The application uses client-side state and a public demo API.

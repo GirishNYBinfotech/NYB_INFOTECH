@@ -53,6 +53,7 @@ import Fetchdatapage from './pages/Practicepage_15-10-2026/Fetchdatapage'
 import Loaddatapage from './pages/Practicepage_15-10-2026/Loaddatapage'
 import ErrorBoundarypage from './pages/Practicepage_15-10-2026/ErrorBoundarypage'
 import Epage from './pages/Practicepage_15-10-2026/Epage'
+import LoginForm from './Components/Practice_16-10-2026/Login/LoginForm'
 
 function App() {
   return (
@@ -113,6 +114,7 @@ function App() {
         <Route path="/ErrorBoundary" element={<ErrorBoundarypage/>} />
         <Route path="/ld" element={<Loaddatapage/>} />
         <Route path="/epage" element={<Epage/>} />
+        <Route path="/Loginform" element={<LoginForm/>} />
       </Routes>
     </BrowserRouter>
   )
