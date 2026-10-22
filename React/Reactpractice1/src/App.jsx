@@ -11,6 +11,18 @@ import Formpage from './pages/Practicepage_21-10-2026/Formpage'
 import Listrendering from './pages/Practicepage_21-10-2026/Listrendering'
 import ConditionalRenderingPage from './pages/Practicepage_21-10-2026/ConditionalRenderingPage'
 import Studentpage from './pages/Practicepage_21-10-2026/Studentpage'
+import Useeffectpage from './pages/Practicepage_22-10-2026/Useeffectpage'
+import Cleeanupfunctionpage from './pages/Practicepage_22-10-2026/Cleeanupfunctionpage'
+import RestApipage from './pages/Practicepage_22-10-2026/RestApipage'
+import Operationpage from './pages/Practicepage_22-10-2026/Operationpage'
+import Apipage from './pages/Practicepage_22-10-2026/Apipage'
+import Contextpage from './pages/Practicepage_22-10-2026/Contextpage'
+import Propdrillingpage from './pages/Practicepage_22-10-2026/Propdrillingpage'
+import Usereduserpage from './pages/Practicepage_22-10-2026/Usereduserpage'
+import Reduserpage from './pages/Practicepage_22-10-2026/Reduserpage'
+import Customhookpage from './pages/Practicepage_22-10-2026/Customhookpage'
+import Apicustomhookpage from './pages/Practicepage_22-10-2026/Apicustomhookpage'
+import Usermanagmentpage from './pages/Practicepage_22-10-2026/Usermanagmentpage'
 
 const App = () => {
   return (
@@ -27,6 +39,18 @@ const App = () => {
       <Route path="/listrender" element={<Listrendering/>} />
       <Route path="/Conditionalrender" element={<ConditionalRenderingPage/>} />
       <Route path="/student" element={<Studentpage/>} />
+      <Route path="/useeffect" element={<Useeffectpage/>} />
+      <Route path="/cleanup" element={<Cleeanupfunctionpage/>} />
+      <Route path="/restapi" element={<RestApipage/>} />
+      <Route path="/operation" element={<Operationpage/>} />
+      <Route path="/api" element={<Apipage/>} />
+      <Route path="/context" element={<Contextpage/>} />
+      <Route path="/propsdriling" element={<Propdrillingpage/>} />
+      <Route path="/usereduser" element={<Usereduserpage/>} />
+      <Route path="/reduser" element={<Reduserpage/>} />
+      <Route path="/Customhook" element={<Customhookpage/>} />
+      <Route path="/apiCustomhook" element={<Apicustomhookpage/>} />
+      <Route path="/usermanagment" element={<Usermanagmentpage/>} />
     </Routes>
     </BrowserRouter>
   )
