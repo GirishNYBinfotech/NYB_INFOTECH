@@ -23,10 +23,25 @@ import Reduserpage from './pages/Practicepage_22-10-2026/Reduserpage'
 import Customhookpage from './pages/Practicepage_22-10-2026/Customhookpage'
 import Apicustomhookpage from './pages/Practicepage_22-10-2026/Apicustomhookpage'
 import Usermanagmentpage from './pages/Practicepage_22-10-2026/Usermanagmentpage'
+import Mainpage from './Components/Practice_23-10-2026/Multipages/Mainpage'
+import Webpage from './Components/Practice_23-10-2026/Dynamic and nested/Webpage'
+import Navigations from './Components/Practice_23-10-2026/Navigations/navigations'
+import Protectedroutes from './Components/Practice_23-10-2026/Protectedroutes/Protectedroutes'
+import Useref from './Components/Practice_23-10-2026/Useref/Useref'
+import Envvariablepage from './pages/Practicepage_23-10-2026/Envvariablepage'
+import Employeememo from './pages/Practicepage_23-10-2026/Employeememo'
+import Lazylodingpage from './pages/Practicepage_23-10-2026/Lazylodingpage'
+import Employee from './Components/Practice_23-10-2026/Employee Managment/Employee'
 
 const App = () => {
   return (
     <BrowserRouter>
+    {/* <Mainpage/> */}
+    {/* <Webpage/> */}
+    {/* <Navigations/> */}
+    {/* <Protectedroutes/> */}
+    {/* <Useref/> */}
+    <Employee/>
     <Routes>
       <Route path="/reusablepages" element={<Reusablepages/>} />
       <Route path="/jsxexpression" element={<Jsexpressiopage/>} />
@@ -51,6 +66,9 @@ const App = () => {
       <Route path="/Customhook" element={<Customhookpage/>} />
       <Route path="/apiCustomhook" element={<Apicustomhookpage/>} />
       <Route path="/usermanagment" element={<Usermanagmentpage/>} />
+      <Route path="/envvariable" element={<Envvariablepage/>} />
+      <Route path="/emp" element={<Employeememo/>} />
+      <Route path="/Lazyloding" element={<Lazylodingpage/>} />
     </Routes>
     </BrowserRouter>
   )
