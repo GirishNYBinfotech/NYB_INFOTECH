@@ -31,7 +31,8 @@ import Useref from './Components/Practice_23-10-2026/Useref/Useref'
 import Envvariablepage from './pages/Practicepage_23-10-2026/Envvariablepage'
 import Employeememo from './pages/Practicepage_23-10-2026/Employeememo'
 import Lazylodingpage from './pages/Practicepage_23-10-2026/Lazylodingpage'
-import Employee from './Components/Practice_23-10-2026/Employee Managment/Employee'
+import Employee from './Components/Practice_26-10-2026/Employee Managment/Employee'
+// import Employee from './Components/Practice_23-10-2026/Employee Managment/Employee'
 
 const App = () => {
   return (
@@ -41,6 +42,7 @@ const App = () => {
     {/* <Navigations/> */}
     {/* <Protectedroutes/> */}
     {/* <Useref/> */}
+    {/* <Employee/> */}
     <Employee/>
     <Routes>
       <Route path="/reusablepages" element={<Reusablepages/>} />
