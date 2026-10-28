@@ -1,0 +1,17 @@
+/* Original style */
+#heading {
+    color: black;
+    padding: 10px;
+}
+
+/* CSS class to add dynamically */
+.highlight {
+    color: white;
+    background-color: blue;
+    border-radius: 8px;
+}
+
+/* Another CSS class */
+.large {
+    font-size: 30px;
+}
