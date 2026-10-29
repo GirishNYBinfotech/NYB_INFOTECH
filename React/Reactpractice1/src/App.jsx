@@ -32,6 +32,8 @@ import Envvariablepage from './pages/Practicepage_23-10-2026/Envvariablepage'
 import Employeememo from './pages/Practicepage_23-10-2026/Employeememo'
 import Lazylodingpage from './pages/Practicepage_23-10-2026/Lazylodingpage'
 import Employee from './Components/Practice_26-10-2026/Employee Managment/Employee'
+import EmployeeList from './Components/practice_29-10-2026/Emp/EmployeeList'
+import Product from './Components/practice_29-10-2026/Product Mangment/Product'
 // import Employee from './Components/Practice_23-10-2026/Employee Managment/Employee'
 
 const App = () => {
@@ -43,7 +45,7 @@ const App = () => {
     {/* <Protectedroutes/> */}
     {/* <Useref/> */}
     {/* <Employee/> */}
-    <Employee/>
+    {/* <Employee/> */}
     <Routes>
       <Route path="/reusablepages" element={<Reusablepages/>} />
       <Route path="/jsxexpression" element={<Jsexpressiopage/>} />
@@ -71,6 +73,8 @@ const App = () => {
       <Route path="/envvariable" element={<Envvariablepage/>} />
       <Route path="/emp" element={<Employeememo/>} />
       <Route path="/Lazyloding" element={<Lazylodingpage/>} />
+      <Route path="/emlist" element={<EmployeeList/>} />
+      <Route path="/prod" element={<Product/>} />
     </Routes>
     </BrowserRouter>
   )
