@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Management System</h1>
+        <!-- Employee Form -->
+        <form id="employeeForm">
+            <input type="hidden" id="employeeId">
+            <input type="text" id="name" placeholder="Employee Name">
+            <input type="email" id="email" placeholder="Employee Email">
+            <input type="text" id="department" placeholder="Department">
+            <input type="number" id="salary" placeholder="Salary">
+            <button type="submit" id="submitBtn">
+                Add Employee
+            </button>
+        </form>
+        <p id="message"></p>
+        <!-- Search -->
+        <input type="text" id="search" placeholder="Search employee...">
+        <!-- Filter -->
+        <select id="filter">
+            <option value="">All Departments</option>
+            <option value="IT">IT</option>
+            <option value="HR">HR</option>
+            <option value="Finance">Finance</option>
+        </select>
+        <!-- Sort -->
+        <select id="sort">
+            <option value="">Sort By</option>
+            <option value="asc">Name A-Z</option>
+            <option value="desc">Name Z-A</option>
+        </select>
+        <h2>Employee List</h2>
+        <p id="loading"></p>
+        <div id="employeeList"></div>
+    </div>
+    <script type="module" src="./app.js"></script>
+</body>
+</html>

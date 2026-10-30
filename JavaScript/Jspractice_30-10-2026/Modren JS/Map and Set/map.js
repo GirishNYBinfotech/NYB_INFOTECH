@@ -1,0 +1,23 @@
+//map()
+console.log("Map()")
+let map=new Map()
+map.set("name","Girish")
+map.set("id",100)
+map.set("loc","hyd")
+
+console.log(map.get("name"))
+console.log(map.has("id"))
+console.log(map.get("loc"))
+map.delete("loc")
+console.log(map.get("loc"))
+console.log(map)
+
+//weakMap()
+console.log("WeakMap()")
+let user = {name:"Rahul"}
+const weakMap = new WeakMap()
+weakMap.set(user, "Employee Details")
+console.log(weakMap.get(user))
+console.log(weakMap.has(user))
+weakMap.delete(user)
+console.log(weakMap.has(user))
