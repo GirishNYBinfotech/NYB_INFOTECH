@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo class and element</title>
+    <style>
+        h3{
+            color: chocolate;
+            text-decoration: underline;
+        }
+        /* Pseduo-class */
+        #btn:hover {
+        background-color: blue;
+        }
+        #btn2:active{
+            background-color: chartreuse;
+            color: brown;
+        }
+        input:focus {
+        border: 5px solid green;
+        color: rgb(17, 15, 124);
+        cursor: pointer;
+        }
+
+        li:first-child {
+        color: red;
+        }
+
+        li:nth-child(even) {
+        background-color: lightgray;
+        }
+        li:nth-child(odd){
+            background: greenyellow;
+        }
+
+        /* Pseudo-element */
+        p::first-letter {
+        color: red;
+        }
+
+        p::first-line {
+        font-weight: bold;
+        }
+        h3::after{
+            content:":"
+        }
+        h1 {
+            text-align: center;
+            color: blue;
+        }
+
+        h1::before {
+            content: "⭐";
+            color: orange;
+            font-size: 30px;
+        }
+
+        h1::after {
+            content: "⭐";
+            color: orange;
+            font-size: 30px;
+        }
+
+        p::before {
+            content: "👉";
+            color: green;
+        }
+
+        p::after {
+            content: "💹";
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h3>pseudo-class</h3>
+    <button id="btn">click</button>
+    <button id="btn2">click2</button>
+    <input placeholder="enter here">
+    <ol>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+        <li>five</li>
+    </ol>
+    
+    <h3>Pseudo-element</h3>
+    <h1>Welocme to pseudo-element</h1>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css selectors</title>
+    <link rel="stylesheet" href="Cssselector.css">
+    <style>
+        /* Universal Selector */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Element Selector */
+        h1 {
+            color: blue;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        /* Class Selector */
+        .container {
+            background-color: lightyellow;
+            padding: 20px;
+        }
+
+        .highlight {
+            color: red;
+            font-weight: bold;
+        }
+
+        /*  ID Selector */
+        #main-title {
+            background-color: lightblue;
+            padding: 10px;
+        }
+
+        /*  Grouping Selector */
+        h2, h3, button {
+            color: green;
+            margin: 10px;
+        }
+
+        /*  Descendant Combinator */
+        .container p {
+            font-family: Arial;
+        }
+
+        /*  Child Combinator */
+        .container > p {
+            background-color: lightpink;
+        }
+
+        /* Adjacent Sibling Combinator */
+        h2 + p {
+            color: purple;
+        }
+        /* General Sibling Combinator */
+        h3 ~ p {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="main-title">CSS Selectors Practice</h1>
+        <h2>Element and Class Selectors</h2>
+        <p>This is the first paragraph.</p>
+        <p class="highlight">
+            This is a highlighted paragraph.
+        </p>
+        <section>
+            <p>This is a nested paragraph.</p>
+        </section>
+        <h2>Adjacent Sibling Example</h2>
+        <p>This paragraph is immediately after h2.</p>
+        <p>This is the second paragraph.</p>
+        <h3>General Sibling Example</h3>
+        <p>General sibling paragraph 1.</p>
+        <p>General sibling paragraph 2.</p>
+        <h2>Grouping Selector Example</h2>
+        <h3>Welcome to CSS</h3>
+        <button>Submit</button>
+    </div>
+</body>
+</html>

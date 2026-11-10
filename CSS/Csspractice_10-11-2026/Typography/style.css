@@ -1,0 +1,27 @@
+ /* Typography */
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+p {
+    font-family: serif;
+    font-size: 18px;
+    line-height: 1.8;
+    word-spacing: 5px;
+}
+
+/* Text Formatting */
+.text {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-shadow: 2px 2px 3px gray;
+}
+
+a {
+    text-decoration: line-through;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css gradient</title>
+    <link rel="stylesheet" href="./gradient.css">
+    <style>
+        #linear{
+            width: 400px;
+            height:200px;
+            padding-top: 100px;
+            text-align: center;
+            color: chartreuse;
+            border: 2px solid black;
+            /* background: linear-gradient(to left,blue,red) */
+            /* background: linear-gradient(to right,blue,red) */
+            background:linear-gradient(to top,blue,red)
+        }
+        #Radial{
+            width: 400px;
+            height:200px;
+            text-align: center;
+            padding-top: 100px;
+            color: rgb(11, 225, 233);
+            border: 4px dotted black;
+            background: radial-gradient(circle,red,blue,orange)
+        }
+        #conical{
+            width: 400px;
+            height:200px;
+            text-align: center;
+            padding-top: 100px;
+            color: rgb(98, 0, 255);
+            border-radius: 50%;
+            background: conic-gradient(red,blue,yellow)
+        }
+        #img{
+            width: 400px;
+            height:200px;
+            background: url("./image.png");
+            background-size: cover;
+            background-position: center;
+            color: blue;
+            text-align: center
+        }
+    </style>
+</head>
+<body>
+    <h3>Linear-Gradient</h3>
+    <div id="linear">linear-gradient</div>
+    <br>
+    <h3>Radial-Gradent</h3>
+    <div id="Radial">Radial-gradient</div>
+    <br>
+    <h3>conical-Gradent</h3>
+    <div id="conical">conical-gradient</div>
+    <br>
+    <h3>background-image</h3>
+    <div id="img">image</div>
+</body>
+</html>
