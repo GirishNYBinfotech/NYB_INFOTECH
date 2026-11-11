@@ -1,0 +1,52 @@
+h2 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    /* Direction */
+    /* flex-direction: row; */
+    /* flex-direction: row-reverse; */
+    flex-direction: column;
+    /* flex-direction: column-reverse; */
+
+    /* Horizontal Alignment */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+    /* justify-content: center; */
+    /* justify-content: flex-start; */
+    justify-content: flex-end;
+
+    /* Vertical Alignment */
+    align-items: center;
+    /* align-items: flex-end; */
+    /* align-items: flex-start; */
+    /* align-items: stretch; */
+
+    /* Wrapping */
+    flex-wrap: nowrap;
+    /* flex-wrap: wrap; */
+    /* flex-wrap: wrap-reverse; */
+
+    /* Spacing */
+    gap: 20px;
+    /* row-gap: 20px; */
+    /* column-gap: 20px; */
+    background-color: white;
+    padding: 20px;
+    min-height: 250px;
+    border: 2px solid black;
+}
+
+.box {
+    width: 150px;
+    height: 120px;
+    background-color: steelblue;
+    color: white;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    font-size:20px;
+    border-radius:10px;
+}

@@ -1,0 +1,61 @@
+.container {
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 30px;
+    height: 150px;
+}
+
+/* Static Position */
+.static {
+    position: static;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+/* Relative Position */
+.relative {
+    position: relative;
+    left: 30px;
+    top: 10px;
+    background-color: lightgreen;
+    padding: 10px;
+    width: 200px;
+}
+
+/*  Absolute Position */
+.absolute-container {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    background-color: orange;
+    padding: 10px;
+}
+
+/* Fixed Position */
+.fixed {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    padding: 15px;
+}
+
+/*Sticky Position */
+.sticky {
+    position: sticky;
+    bottom: 0;
+    background-color: purple;
+    color: white;
+    padding: 15px;
+}
+
+.content {
+    height: 600px;
+    background-color: #eee;
+    padding: 20px;
+}
