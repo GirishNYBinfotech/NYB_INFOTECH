@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Transition</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background: steelblue;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 15px;
+            cursor: pointer;
+        }
+
+        /* Transition Property */
+        .property {
+            transition-property: background-color;
+            transition-duration: 2s;
+        }
+
+        .property:hover {
+            background-color: red;
+        }
+
+        /* Transition Duration */
+        .duration {
+            transition-property: width;
+            transition-duration: 2s;
+        }
+
+        .duration:hover {
+            width: 250px;
+        }
+
+        /* Transition Timing Function - ease */
+        .ease {
+            transition: width 2s ease;
+        }
+
+        .ease:hover {
+            width: 250px;
+        }
+
+        /* Linear */
+        .linear {
+            transition: width 2s linear;
+        }
+
+        .linear:hover {
+            width: 250px;
+        }
+
+        /* Ease-in */
+        .ease-in {
+            transition: width 2s ease-in;
+        }
+
+        .ease-in:hover {
+            width: 250px;
+        }
+
+        /* Ease-out */
+        .ease-out {
+            transition: width 2s ease-out;
+        }
+
+        .ease-out:hover {
+            width: 250px;
+        }
+
+        /* Ease-in-out */
+        .ease-in-out {
+            transition: width 2s ease-in-out;
+        }
+
+        .ease-in-out:hover {
+            width: 250px;
+        }
+
+        /* Transition Delay */
+        .delay {
+            transition-property: background-color;
+            transition-duration: 1s;
+            transition-delay: 2s;
+        }
+
+        .delay:hover {
+            background-color: orange;
+        }
+
+        /* Transition All */
+        .all {
+            transition: all 2s ease-in-out;
+        }
+
+        .all:hover {
+            background-color: green;
+            width: 200px;
+            transform: rotate(10deg);
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS Transition Examples</h2>
+    <p>Hover over each box to see the transition.</p>
+
+    <div class="container">
+        <div>
+            <p>Transition Property</p>
+            <div class="box property">Hover</div>
+        </div>
+
+        <div>
+            <p>Transition Duration</p>
+            <div class="box duration">Hover</div>
+        </div>
+
+        <div>
+            <p>Ease</p>
+            <div class="box ease">Ease</div>
+        </div>
+
+        <div>
+            <p>Linear</p>
+            <div class="box linear">Linear</div>
+        </div>
+
+        <div>
+            <p>Ease In</p>
+            <div class="box ease-in">Ease In</div>
+        </div>
+
+        <div>
+            <p>Ease Out</p>
+            <div class="box ease-out">Ease Out</div>
+        </div>
+
+        <div>
+            <p> Ease In Out</p>
+            <div class="box ease-in-out">Ease In Out</div>
+        </div>
+
+        <div>
+            <p>Transition Delay</p>
+            <div class="box delay">Hover</div>
+        </div>
+
+        <div>
+            <p>Transition All</p>
+            <div class="box all">Hover</div>
+        </div>
+    </div>
+</body>
+</html>

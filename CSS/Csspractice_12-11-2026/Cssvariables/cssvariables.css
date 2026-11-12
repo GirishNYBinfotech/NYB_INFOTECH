@@ -1,0 +1,42 @@
+/* Global Variables */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #333;
+  --text-color: white;
+  --border-radius: 8px;
+  --spacing: 20px;
+}
+body{
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+/* Container */
+.container {
+  width: 30%;
+  height: auto;
+  padding: var(--spacing);
+  text-align: center;
+  border: 3px solid black;
+  border-radius: var(--border-radius);
+  
+}
+
+/* Heading */
+h1 {
+  color: var(--primary-color);
+}
+
+/* Paragraph */
+p {
+  color: var(--secondary-color);
+}
+
+/* Buttons */
+.btn {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border-radius: var(--border-radius);
+  padding: 10px 20px;
+  border: none;
+}

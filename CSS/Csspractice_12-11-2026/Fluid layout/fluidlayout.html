@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluid layout</title>
+    <style>
+    .container {
+      width: min(90%, 1200px);
+      margin: auto;
+    }
+
+    h1 {
+      font-size: clamp(24px, 5vw, 60px);
+    }
+
+    p {
+      font-size: clamp(14px, 2vw, 20px);
+    }
+
+    .card {
+      padding: clamp(15px, 3vw, 40px);
+      background: lightblue;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+    <div class="card">
+      <h1>Responsive Design</h1>
+      <p>This layout automatically adjusts screen size.</p>
+    </div>
+  </div>
+</body>
+</html>

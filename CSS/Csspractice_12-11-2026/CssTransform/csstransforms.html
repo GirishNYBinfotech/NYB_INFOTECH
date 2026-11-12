@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Transforms</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background: steelblue;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        /* Translate */
+        .translate {
+            transform: translate(30px, 20px);
+        }
+
+        /* Translate X */
+        .translateX {
+            transform: translateX(30px);
+        }
+
+        /* Translate Y */
+        .translateY {
+            transform: translateY(30px);
+        }
+
+        /*  Rotate */
+        .rotate {
+            transform: rotate(45deg);
+        }
+
+        /* Scale */
+        .scale {
+            transform: scale(1.5);
+        }
+
+        /*Scale X */
+        .scaleX {
+            transform: scaleX(1.5);
+        }
+
+        /*Scale Y */
+        .scaleY {
+            transform: scaleY(1.5);
+        }
+
+        /*Skew */
+        .skew {
+            transform: skew(20deg, 10deg);
+        }
+
+        /*Skew X */
+        .skewX {
+            transform: skewX(20deg);
+        }
+
+        /* Skew Y */
+        .skewY {
+            transform: skewY(20deg);
+        }
+    </style>
+</head>
+<body>
+     <h2>CSS Transform</h2>
+    <div class="container">
+        <div>
+            <p>Translate</p>
+            <div class="box translate">Translate</div>
+        </div>
+
+        <div>
+            <p>Translate X</p>
+            <div class="box translateX">Translate X</div>
+        </div>
+
+        <div>
+            <p>Translate Y</p>
+            <div class="box translateY">Translate Y</div>
+        </div>
+
+        <div>
+            <p>Rotate</p>
+            <div class="box rotate">Rotate</div>
+        </div>
+
+        <div>
+            <p>Scale</p>
+            <div class="box scale">Scale</div>
+        </div>
+
+        <div>
+            <p>Scale X</p>
+            <div class="box scaleX">Scale X</div>
+        </div>
+
+        <div>
+            <p>Scale Y</p>
+            <div class="box scaleY">Scale Y</div>
+        </div>
+
+        <div>
+            <p>Skew</p>
+            <div class="box skew">Skew</div>
+        </div>
+
+        <div>
+            <p>Skew X</p>
+            <div class="box skewX">Skew X</div>
+        </div>
+
+        <div>
+            <p>Skew Y</p>
+            <div class="box skewY">Skew Y</div>
+        </div>
+    </div>
+</body>
+</html>

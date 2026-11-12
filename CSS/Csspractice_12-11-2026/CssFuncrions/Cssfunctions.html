@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css functions</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f1f5f9;
+        }
+
+        /* clamp() - Responsive heading */
+        h1 {
+            font-size: clamp(24px, 5vw, 50px);
+            text-align: center;
+        }
+
+        /* min() - Container width */
+        .container {
+            width: min(90%, 1200px);
+            margin: auto;
+            padding: 20px;
+        }
+
+        /* max() - Minimum padding */
+        .card {
+            padding: max(15px, 2vw);
+            background: white;
+            border-radius: 10px;
+        }
+
+        /* calc() - Calculate width */
+        .box {
+            width: calc(100% - 20px);
+            margin: 10px;
+            background: lightblue;
+            padding: 15px
+        }
+
+        /* repeat() and minmax() - Responsive grid */
+        .grid {
+            display: grid;
+            grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        /* clamp() - Responsive paragraph */
+        p {
+            font-size: clamp(14px, 2vw, 18px)
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CSS Responsive Design</h1>
+        <div class="box">
+            Using CSS Functions
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <h2>HTML</h2>
+                <p>Structure of webpage.</p>
+            </div>
+
+            <div class="card">
+                <h2>CSS</h2>
+                <p>Design and styling.</p>
+            </div>
+
+            <div class="card">
+                <h2>JavaScript</h2>
+                <p>Website functionality.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

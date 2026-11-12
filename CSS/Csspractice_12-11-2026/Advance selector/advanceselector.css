@@ -1,0 +1,82 @@
+/* Descendant Selector */
+.container p {
+    color: red;
+}
+
+/*  Child Selector */
+.container > h2 {
+    color: blue;
+}
+
+/*  Adjacent Sibling Selector */
+h2 + p {
+    background-color: lightgreen;
+}
+
+/* General Sibling Selector */
+h2 ~ h3 {
+    color: purple;
+}
+
+/* Attribute Selector */
+input[type="text"] {
+    border: 2px solid green;
+}
+input[type^="pass"] {
+    background-color: lightyellow;
+}
+a[href$=".com"] {
+    color: red;
+}
+
+/* Pseudo-Class Selectors */
+button:hover {
+    background-color: orange;
+    cursor: pointer;
+}
+input:focus {
+    outline: 2px solid blue;
+}
+li:first-child {
+    color: red;
+}
+li:last-child {
+    color: blue;
+}
+li:nth-child(2) {
+    background-color: lightpink;
+}
+li:nth-child(odd) {
+    font-weight: bold;
+}
+li:not(:first-child) {
+    border-bottom: 1px solid gray;
+}
+input:checked + label {
+    color: green;
+}
+
+/* Pseudo-Elements */
+h1::before {
+    content: "--";
+    color: orange;
+}
+h1::after {
+    content: "--";
+    color: orange;
+}
+p::first-letter {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Modern Advanced Selectors */
+:is(h2, h3) {
+    font-family: Arial;
+}
+:where(.container, .box) {
+    padding: 10px;
+}
+.box:has(p) {
+    border: 2px solid purple
+}

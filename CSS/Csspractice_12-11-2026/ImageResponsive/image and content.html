@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image and content</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .container img {
+            width: 50%;
+            height: 250px;
+        }
+
+        .content {
+            width: 50%;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+            .container img,
+            .content {
+                width: 100%;
+            }
+            .content {
+                font-size: 14px;
+            }
+        }
+
+        /* Tablet */
+        @media (min-width: 601px) and (max-width: 1024px) {
+            .container img {
+                width: 45%;
+            }
+            .content {
+                width: 55%;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://picsum.photos/600/400" alt="Nature">
+        <div class="content">
+            <h2>Images</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium molestias suscipit rem veritatis rerum, sapiente provident ipsam necessitatibus esse est?</p>
+            <button>Read More</button>
+        </div>
+    </div>
+</body>
+</html>
