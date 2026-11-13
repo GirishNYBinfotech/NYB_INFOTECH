@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Animation</title>
+    <link rel="stylesheet" href="./Css Animation.css">
+    <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 20px
+    }
+
+    .box1 {
+      width: 100px;
+      height: 70px;
+      background-color: royalblue;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      animation-name: moveBox;
+      animation-duration: 3s;
+      animation-delay: 2s;
+      animation-iteration-count: 3;
+      animation-direction: alternate
+    }
+
+    @keyframes moveBox {
+      0%{
+        transform:translateX(0);
+        background-color:royalblue
+      }
+      50%{
+        background-color: orange
+      }
+      100%{
+        transform: translateX(300px);
+        background-color:red
+      }
+    }
+  </style>
+</head>
+<body>
+    <h2>CSS Animation</h2>
+    <div class="container">
+        <div class="box1">Animate</div>
+    </div>
+
+    <h2>CSS Functions</h2>
+    <div class="calc-box">
+        calc() - Width: 100% - 40px
+    </div>
+
+    <div class="min-box">
+        min() - Width: 80% or 400px
+    </div>
+
+    <div class="max-box">
+        max() - Width: 50% or 300px
+    </div>
+
+    <div class="clamp-box">
+        clamp() - Width: 200px to 600px
+    </div>
+
+</body>
+</html>

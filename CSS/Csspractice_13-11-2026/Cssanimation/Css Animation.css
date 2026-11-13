@@ -1,0 +1,47 @@
+ /* calc() */
+.calc-box {
+    width: calc(100% - 40px);
+    height: 80px;
+    background-color: royalblue;
+    color: white;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* min() */
+.min-box {
+    width: min(80%, 400px);
+    height: 80px;
+    background-color: green;
+    color: white;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* max() */
+.max-box {
+    width: max(50%, 300px);
+    height: 80px;
+    background-color: orange;
+    color: white;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* clamp() */
+.clamp-box {
+    width: clamp(200px, 60%, 600px);
+    height: 80px;
+    background-color: purple;
+    color: white;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

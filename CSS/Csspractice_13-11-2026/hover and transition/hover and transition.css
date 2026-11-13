@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 30px;
+}
+
+/* Button Hover Effect */
+.btn {
+    padding: 15px 30px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.btn:hover {
+    background: #56616d;
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Card Hover Effect */
+.card {
+    width: 220px;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: all 0.5s ease;
+}
+
+.card:hover {
+    transform: translateY(-15px) rotate(2deg);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* Image Hover Effect */
+.image {
+    width: 200px;
+    height: 150px;
+    background: linear-gradient(45deg, #ff6b6b, #6c5ce7);
+    border-radius: 12px;
+    transition: transform 0.5s ease;
+}
+
+.image:hover {
+    transform: scale(1.15);
+}
+
+/* Text Hover Effect */
+.text {
+    font-size: 22px;
+    transition: color 0.3s ease, letter-spacing 0.3s ease;
+}
+
+.text:hover {
+    color: #007bff;
+    letter-spacing: 3px;
+}

@@ -1,0 +1,52 @@
+.box {
+  width: 120px;
+  height: 120px;
+  background-color: blue;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  animation: moveBox 3s infinite alternate;
+}
+
+
+@keyframes moveBox {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(300px);
+  }
+}
+
+.box1{
+    width: 120px;
+  height: 120px;
+  background-color: red;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: aroundBox 3s infinite alternate;
+}
+
+@keyframes aroundBox{
+    0%{
+        transform: translatex(0);
+    }
+    25%{
+        transform: translatex(100px);
+    }
+    50%{
+        transform: translatey(100px);
+    }
+    75%{
+        transform: translateX(100px);
+    }
+    100%{
+        transform: translatey(100px);
+    }
+}
